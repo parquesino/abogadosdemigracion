@@ -21,8 +21,8 @@
         .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; border-radius: .5rem; font-weight: 600; box-shadow: 0 4px 6px -1px rgba(0,0,0,.1); transition: transform .2s ease-in-out; text-decoration: none; text-align: center; font-family: Arial,Helvetica,sans-serif; }
         .btn:hover { transform: scale(1.05); }
         .navbar { background-color: #fff; box-shadow: 0 4px 6px -1px rgba(0,0,0,.1); position: sticky; top: 0; z-index: 50; }
-        .navbar-container { display: flex; justify-content: space-between; align-items: center; height: 5rem; }
-        .navbar-logo { height: 45px; object-fit: contain; }
+        .navbar-container { display: flex; justify-content: space-between; align-items: center; height: 5rem; gap: 1rem; }
+        .navbar-logo { height: 45px; max-width: 210px; width: auto; object-fit: contain; flex-shrink: 0; }
         .nav-links { display: none; }
         @media (min-width: 768px) { .nav-links { display: flex; align-items: center; gap: 1rem; } }
         .nav-link { color: #1e293b; padding: .5rem .75rem; border-radius: .375rem; font-size: .875rem; font-weight: 600; text-decoration: none; font-family: Arial,Helvetica,sans-serif; }
@@ -135,7 +135,7 @@
     <nav class="navbar">
         <div class="container navbar-container">
             <a href="https://www.abogadosdemigracion.com.co" title="Colombian Passport Inicio">
-                <img src="logo-cp.png" alt="Colombian Passport Logo" class="navbar-logo">
+                <img src="logo-cp.png" alt="Colombian Passport Logo" class="navbar-logo" onerror="this.onerror=null;this.src='https://static.wixstatic.com/media/d8d541_c9976aa2f5f54957872bb02341cc2d9d~mv2.png';">
             </a>
             <div class="nav-links">
                 <a href="#camila" class="nav-link">Camila</a>
@@ -167,7 +167,7 @@
                 <p class="section-sub" style="text-align:center; color:#475569; max-width:720px; margin:0 auto;">Asesoramos acerca de todas las categorías de visas colombianas, para cualquier nacionalidad — desde Colombia o tu país de residencia, ante cualquier consulado colombiano. Conoce nuestros precios y alcance de los servicios:</p>
                 <div style="display:grid; gap:1rem; margin-top:2rem;">
                     <div style="display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));">
-                        <a href="https://www.abogadosdemigracion.com.co/nuestros-servicios/visa-de-conyuge-full-service" target="_blank" rel="noopener" style="background:#0f2040; color:#fff; border-radius:.75rem; padding:1.25rem 1.5rem; text-decoration:none;"><b>Visa de Cónyuge</b><br><span style="font-size:.85rem; color:#BFDBFE;">Casado con colombiano · 3 años a residencia</span><br><span style="font-size:.8rem; color:#c8a96a; font-weight:bold;">Nuestros fees: $450 – $650</span></a>
+                        <a href="/visa-conyuge" style="background:#0f2040; color:#fff; border-radius:.75rem; padding:1.25rem 1.5rem; text-decoration:none;"><b>Visa de Cónyuge</b><br><span style="font-size:.85rem; color:#BFDBFE;">Casado con colombiano · 3 años a residencia</span><br><span style="font-size:.8rem; color:#c8a96a; font-weight:bold;">Nuestros fees: $450 – $650</span></a>
                         <a href="https://www.abogadosdemigracion.com.co/nuestros-servicios/visa-de-pensionado-full-service" target="_blank" rel="noopener" style="background:#0f2040; color:#fff; border-radius:.75rem; padding:1.25rem 1.5rem; text-decoration:none;"><b>Visa de Pensionado</b><br><span style="font-size:.85rem; color:#BFDBFE;">Retírate en Colombia con tu pensión</span><br><span style="font-size:.8rem; color:#c8a96a; font-weight:bold;">Nuestros fees: $350 – $540</span></a>
                         <a href="https://www.abogadosdemigracion.com.co/nuestros-servicios/visa-nomada-digital-full-service" target="_blank" rel="noopener" style="background:#0f2040; color:#fff; border-radius:.75rem; padding:1.25rem 1.5rem; text-decoration:none;"><b>Visa de Nómada Digital</b><br><span style="font-size:.85rem; color:#BFDBFE;">Trabaja remoto, vive legal</span><br><span style="font-size:.8rem; color:#c8a96a; font-weight:bold;">Nuestros fees: $350 – $540</span></a>
                         <a href="https://www.abogadosdemigracion.com.co/nuestros-servicios/visa-inversionista-full-service" target="_blank" rel="noopener" style="background:#0f2040; color:#fff; border-radius:.75rem; padding:1.25rem 1.5rem; text-decoration:none;"><b>Visa de Inversionista</b><br><span style="font-size:.85rem; color:#BFDBFE;">Visa vía inversión</span><br><span style="font-size:.8rem; color:#c8a96a; font-weight:bold;">Nuestros fees: $550 – $760</span></a>
