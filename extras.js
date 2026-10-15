@@ -20,8 +20,8 @@
     { s: "Apostilla de antecedentes EE.UU./CA", e: "$140", p: "$140", i: "✓" },
     { s: "Movimientos migratorios <small>(por certificado)</small>", e: "$90", p: "$90", i: "✓" },
     { s: "Apostillas estatales EE.UU./CA <small>(por apostilla)</small>", e: "$160", p: "$160", i: "✓" },
-    { s: "Pago del estudio <small>(gestionado, tasa incluida)</small>", e: "$120", p: "$120", i: "✓" },
-    { s: "Pago de expedición <small>(gestionado, tasa incluida)</small>", e: "EXPEDICION", p: "EXPEDICION", i: "✓" },
+    { s: "Pago del estudio <small>(gestionado, tasa incluida)</small> <sup style=\"color:#0f2040;font-weight:800;\">1</sup>", e: "$120", p: "$120", i: "✓" },
+    { s: "Pago de expedición <small>(gestionado, tasa incluida)</small> <sup style=\"color:#0f2040;font-weight:800;\">2</sup>", e: "EXPEDICION", p: "EXPEDICION", i: "✓" },
     { s: "Cita de cédula de extranjería <small>(adicional)</small>", e: "$60", p: "Hasta 2 veces", i: "Todas las necesarias" },
     { s: "Recogida de cédula con poder", e: "$95", p: "$95", i: "✓" },
     { s: "Registro de matrimonio en Colombia", e: "$300", p: "$250", i: "✓" },
@@ -68,7 +68,8 @@
       "<th>Integral<br>$" + pi + "</th></tr></thead><tbody>" +
       rows +
       "</tbody></table></div>" +
-      '<p class="extras-note">*Estudio: $56 directo al Estado o $120 gestionado ($56 tasa + $64 gestión). ' + expNote + '</p>' +
+      '<p class="extras-note">¹ Estudio: $56 directo al Estado o $120 gestionado ($56 tasa + $64 gestión).</p>' +
+      '<p class="extras-note">² ' + expNote + '</p>' +
       '<p class="extras-note">¿Tasas del gobierno (estudio, expedición oficial, cédula)? Están en la caja amarilla de arriba. Todo adicional se confirma por escrito antes de ejecutarse — sin sorpresas.</p>';
   }
 

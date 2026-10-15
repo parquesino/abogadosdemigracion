@@ -20,8 +20,8 @@
     { s: "Records apostille USA/CA", e: "$140", p: "$140", i: "✓" },
     { s: "Migratory movements <small>(per certificate)</small>", e: "$90", p: "$90", i: "✓" },
     { s: "State apostilles USA/CA <small>(per apostille)</small>", e: "$160", p: "$160", i: "✓" },
-    { s: "Study payment <small>(managed, fee included)</small>", e: "$120", p: "$120", i: "✓" },
-    { s: "Issuance payment <small>(managed, fee included)</small>", e: "EXPEDICION", p: "EXPEDICION", i: "✓" },
+    { s: "Study payment <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">1</sup>", e: "$120", p: "$120", i: "✓" },
+    { s: "Issuance payment <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">2</sup>", e: "EXPEDICION", p: "EXPEDICION", i: "✓" },
     { s: "Cédula appointment <small>(additional)</small>", e: "$60", p: "Up to 2 times", i: "All needed" },
     { s: "Cédula pickup with POA", e: "$95", p: "$95", i: "✓" },
     { s: "Marriage registration in Colombia", e: "$300", p: "$250", i: "✓" },
@@ -66,7 +66,8 @@
       "<th>Turnkey<br>$" + pi + "</th></tr></thead><tbody>" +
       rows +
       "</tbody></table></div>" +
-      '<p class="extras-note">*Study: $56 paid directly or $120 managed ($56 fee + $64 handling). ' + expNote + '</p>' +
+      '<p class="extras-note">¹ Study: $56 paid directly or $120 managed ($56 fee + $64 handling).</p>' +
+      '<p class="extras-note">² ' + expNote + '</p>' +
       '<p class="extras-note">Government fees (study, official issuance, c\u00e9dula)? They\u2019re in the yellow box above. Every extra is confirmed in writing before we execute — no surprises.</p>';
   }
 
