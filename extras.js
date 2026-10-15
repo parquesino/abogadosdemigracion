@@ -11,14 +11,14 @@
     { s: "Traducciones oficiales al español <small>(por página)</small>", e: "$20", p: "Máximo 2 páginas", i: "✓" },
     { s: "Análisis de requerimientos + respuesta", e: "$80", p: "Hasta 2", i: "Todos" },
     { s: "Reaplicación por inadmisión", e: "$80", p: "Hasta 1 vez", i: "Todas" },
-    { s: "Solicitud de prórroga de permanencia", e: "$17", p: "✓", i: "✓" },
-    { s: "Pago de prórroga de permanencia", e: "$143", p: "$143", i: "✓" },
-    { s: "Registro FUT + cita de salvoconducto", e: "$90", p: "$90", i: "✓" },
+    { s: "Solicitud de prórroga de permanencia <sup style=\"color:#0f2040;font-weight:800;\">3</sup>", e: "$17", p: "✓", i: "✓" },
+    { s: "Pago de prórroga de permanencia <sup style=\"color:#0f2040;font-weight:800;\">3</sup>", e: "$143", p: "$143", i: "✓" },
+    { s: "Registro FUT + cita de salvoconducto <sup style=\"color:#0f2040;font-weight:800;\">3</sup>", e: "$90", p: "$90", i: "✓" },
     { s: "Proceso administrativo + primera cita", e: "$90", p: "$90", i: "✓" },
     { s: "Toma de huellas en Colombia para antecedentes <small>(solo FBI)</small>", e: "$250", p: "$250", i: "✓" },
     { s: "Adquisición de antecedentes EE.UU./CA", e: "$150", p: "$150", i: "✓" },
     { s: "Apostilla de antecedentes EE.UU./CA", e: "$140", p: "$140", i: "✓" },
-    { s: "Movimientos migratorios <small>(por certificado)</small>", e: "$90", p: "$90", i: "✓" },
+    { s: "Movimientos migratorios <small>(por certificado)</small> <sup style=\"color:#0f2040;font-weight:800;\">3</sup>", e: "$70", p: "$70", i: "✓" },
     { s: "Apostillas estatales EE.UU./CA <small>(por apostilla)</small>", e: "$160", p: "$160", i: "✓" },
     { s: "Pago del estudio <small>(gestionado, tasa incluida)</small> <sup style=\"color:#0f2040;font-weight:800;\">1</sup>", e: "$120", p: "$120", i: "✓" },
     { s: "Pago de expedición <small>(gestionado, tasa incluida)</small> <sup style=\"color:#0f2040;font-weight:800;\">2</sup>", e: "EXPEDICION", p: "EXPEDICION", i: "✓" },
@@ -45,7 +45,7 @@
     var OFF = { V: "183", M: "279", R: "408" };
     var expNote = exp === "ALL"
       ? "Expedición: tasa oficial según tipo (V $183 / M $279 / R $408) o gestión con tasa incluida."
-      : "Expedición " + exp + ": $" + OFF[exp] + " directo al Estado o $" + EXP_GESTION[exp] + " gestionado ($" + OFF[exp] + " tasa + $" + (parseInt(EXP_GESTION[exp].slice(1)) - parseInt(OFF[exp])) + " gestión).";
+      : "Expedición " + exp + ": $" + OFF[exp] + " directo al Estado o " + EXP_GESTION[exp] + " gestionado ($" + OFF[exp] + " tasa + $" + (parseInt(EXP_GESTION[exp].slice(1)) - parseInt(OFF[exp])) + " gestión).";
     var pp = el.getAttribute("data-protegido") || "650";
     var pi = el.getAttribute("data-integral") || "2.900";
 
@@ -70,7 +70,7 @@
       "</tbody></table></div>" +
       '<p class="extras-note">¹ Estudio: $56 directo al Estado o $120 gestionado ($56 tasa + $64 gestión).</p>' +
       '<p class="extras-note">² ' + expNote + '</p>' +
-      '<p class="extras-note">¿Tasas del gobierno (estudio, expedición oficial, cédula)? Están en la caja amarilla de arriba. Todo adicional se confirma por escrito antes de ejecutarse — sin sorpresas.</p>';
+      '<p class="extras-note">³ Prórroga de permanencia: tasa oficial $150.000 COP. Salvoconducto: tasa oficial $88.000 COP. Certificado de movimientos migratorios: tasa oficial $89.000 COP (nuestra gestión: $70 USD por certificado).</p>';
   }
 
   if (document.readyState === "loading") {
