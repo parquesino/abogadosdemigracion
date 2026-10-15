@@ -11,14 +11,15 @@
     { s: "Official Spanish translations <small>(per page)</small>", e: "$20", p: "Up to 2 pages", i: "✓" },
     { s: "Requirements analysis + response", e: "$80", p: "Up to 2", i: "All" },
     { s: "Re-application after inadmission", e: "$80", p: "Up to 1 time", i: "All" },
-    { s: "Stay extension request <sup style=\"color:#0f2040;font-weight:800;\">3</sup>", e: "$17", p: "✓", i: "✓" },
+    { s: "Stay extension request", e: "$17", p: "✓", i: "✓" },
     { s: "Stay extension payment <sup style=\"color:#0f2040;font-weight:800;\">3</sup>", e: "$143", p: "$143", i: "✓" },
-    { s: "FUT registration + safe-conduct appointment <sup style=\"color:#0f2040;font-weight:800;\">3</sup>", e: "$90", p: "$90", i: "✓" },
+    { s: "FUT registration + safe-conduct appointment", e: "$90", p: "$90", i: "✓" },
+    { s: "Safe-conduct payment <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">5</sup>", e: "$70", p: "$70", i: "✓" },
     { s: "Administrative process + first appointment", e: "$90", p: "$90", i: "✓" },
     { s: "Fingerprinting in Colombia for records <small>(FBI only)</small>", e: "$250", p: "$250", i: "✓" },
     { s: "Records procurement USA/CA", e: "$150", p: "$150", i: "✓" },
     { s: "Records apostille USA/CA", e: "$140", p: "$140", i: "✓" },
-    { s: "Migratory movements <small>(per certificate)</small> <sup style=\"color:#0f2040;font-weight:800;\">3</sup>", e: "$70", p: "$70", i: "✓" },
+    { s: "Migratory movements <small>(per certificate)</small> <sup style=\"color:#0f2040;font-weight:800;\">4</sup>", e: "$70", p: "$70", i: "✓" },
     { s: "State apostilles USA/CA <small>(per apostille)</small>", e: "$160", p: "$160", i: "✓" },
     { s: "Study payment <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">1</sup>", e: "$120", p: "$120", i: "✓" },
     { s: "Issuance payment <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">2</sup>", e: "EXPEDICION", p: "EXPEDICION", i: "✓" },
@@ -68,7 +69,9 @@
       "</tbody></table></div>" +
       '<p class="extras-note">¹ Study: $56 paid directly or $120 managed ($56 fee + $64 handling).</p>' +
       '<p class="extras-note">² ' + expNote + '</p>' +
-      '<p class="extras-note">³ Stay extension: $150,000 COP official fee. Safe-conduct: $88,000 COP official fee. Migratory movements certificate: $89,000 COP official fee (our handling: $70 USD per certificate).</p>';
+      '<p class="extras-note">³ Stay extension: $150,000 COP official fee (≈$46 USD). Managed: $143 ($46 fee + $97 handling).</p>' +
+      '<p class="extras-note">⁴ Migratory movements certificate: $89,000 COP official fee (≈$27 USD). Managed: $70 ($27 fee + $43 handling).</p>' +
+      '<p class="extras-note">⁵ Safe-conduct: $88,000 COP official fee (≈$27 USD). Managed: $70 ($27 fee + $43 handling).</p>';
   }
 
   if (document.readyState === "loading") {
