@@ -112,3 +112,14 @@ header h2 { font-size: 1.1rem; font-weight: 400; margin-bottom: 2.25rem; max-wid
 .footer .brand { font-size: 1.125rem; margin-bottom: 0.25rem; color: white; font-weight: 600; }
 .footer a { color: #9CA3AF; text-decoration: none; }
 .footer a:hover { color: #ffffff; text-decoration: underline; }
+/* Tabla "Otras tarifas y servicios" (renderizada por extras.js) */
+.xtable-wrap { overflow-x: auto; border: 1px solid #E5E7EB; border-radius: 1rem; background: #fff; margin-top: 1.5rem; }
+.xtable { width: 100%; min-width: 560px; border-collapse: collapse; font-size: .88rem; font-family: Arial,Helvetica,sans-serif; }
+.xtable th { background: #0f2040; color: #fff; text-align: left; padding: 12px 14px; }
+.xtable th:last-child, .xtable td:last-child { text-align: center; width: 30%; }
+.xtable td { padding: 9px 14px; border-top: 1px solid #E5E7EB; color: #1e293b; }
+.xtable tbody tr:nth-child(even) td { background: #F9FAFB; }
+.xtable td b { color: #0f2040; white-space: nowrap; }
+.xtable td small { color: #64748b; }
+.xtable .hl { background: #FEF9E7; border: 1px solid #c8a96a; border-radius: .375rem; padding: .1rem .5rem; font-weight: 800; white-space: nowrap; }
+.extras-note { font-size: .82rem; color: #6B7280; margin-top: .75rem; font-family: Arial,Helvetica,sans-serif; }
