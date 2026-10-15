@@ -15,7 +15,7 @@
     { s: "Pago de prórroga de permanencia", e: "$143", p: "$143", i: "✓" },
     { s: "Registro FUT + cita de salvoconducto", e: "$90", p: "$90", i: "✓" },
     { s: "Proceso administrativo + primera cita", e: "$90", p: "$90", i: "✓" },
-    { s: "Toma de huellas FBI/RCMP en Colombia", e: "$320", p: "$320", i: "✓" },
+    { s: "Toma de huellas en Colombia para antecedentes <small>(solo FBI)</small>", e: "$250", p: "$250", i: "✓" },
     { s: "Adquisición de antecedentes EE.UU./CA", e: "$150", p: "$150", i: "✓" },
     { s: "Apostilla de antecedentes EE.UU./CA", e: "$140", p: "$140", i: "✓" },
     { s: "Movimientos migratorios <small>(por certificado)</small>", e: "$90", p: "$90", i: "✓" },
@@ -24,7 +24,8 @@
     { s: "Pago de expedición <small>(gestión)</small>", e: "EXPEDICION", p: "EXPEDICION", i: "✓" },
     { s: "Cita de cédula de extranjería <small>(adicional)</small>", e: "$60", p: "Hasta 2 veces", i: "Todas las necesarias" },
     { s: "Recogida de cédula con poder", e: "$95", p: "$95", i: "✓" },
-    { s: "Visa de beneficiario <small>(hereda el plan del titular)</small>", e: "$350", p: "$200", i: "$100" }
+    { s: "Registro de matrimonio en Colombia", e: "$300", p: "$250", i: "✓" },
+    { s: "Visa de beneficiario <small>(hereda el plan del titular)</small>", e: "$350", p: "$300", i: "$200" }
   ];
 
   function cell(v, hl) {
