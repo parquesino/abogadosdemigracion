@@ -112,6 +112,17 @@ header h2 { font-size: 1.1rem; font-weight: 400; margin-bottom: 2.25rem; max-wid
 .footer .brand { font-size: 1.125rem; margin-bottom: 0.25rem; color: white; font-weight: 600; }
 .footer a { color: #9CA3AF; text-decoration: none; }
 .footer a:hover { color: #ffffff; text-decoration: underline; }
+/* Cómo trabajamos visual 3x2 */
+.how-grid { display: grid; gap: 1.5rem; grid-template-columns: 1fr; }
+@media (min-width: 700px) { .how-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .how-grid { grid-template-columns: repeat(3, 1fr); } }
+.how-card { background: #fff; border: 1px solid #e2e8f0; border-radius: .75rem; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0,0,0,.08); }
+.how-card img { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; }
+.how-body { padding: 1.5rem; font-family: Arial,Helvetica,sans-serif; }
+.how-title { margin: 0 0 .5rem; display: flex; align-items: center; gap: .6rem; }
+.how-title span { min-width: 32px; height: 32px; border-radius: 50%; background: #0f2040; color: #fff; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; }
+.how-title b { color: #0f2040; font-size: 1.1rem; }
+.how-text { margin: 0; font-size: .92rem; color: #475569; }
 /* Tabla "Otras tarifas y servicios" (renderizada por extras.js) */
 .xtable-wrap { overflow-x: auto; border: 1px solid #E5E7EB; border-radius: 1rem; background: #fff; margin-top: 1.5rem; }
 .xtable { width: 100%; min-width: 560px; border-collapse: collapse; font-size: .88rem; font-family: Arial,Helvetica,sans-serif; }
