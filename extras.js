@@ -37,13 +37,15 @@
     var el = document.getElementById("extras-table");
     if (!el) return;
     var exp = (el.getAttribute("data-expedicion") || "M").toUpperCase();
-    if (!EXP_GESTION[exp]) exp = "M";
+    if (exp !== "ALL" && !EXP_GESTION[exp]) exp = "M";
     var pe = el.getAttribute("data-esencial") || "450";
     var pp = el.getAttribute("data-protegido") || "650";
+    var pi = el.getAttribute("data-integral") || "2.900";
 
     var rows = EXTRAS.map(function (r) {
-      var e = r.e === "EXPEDICION" ? EXP_GESTION[exp] : r.e;
-      var p = r.p === "EXPEDICION" ? EXP_GESTION[exp] : r.p;
+      var allExp = "V $250 · M $350 · R $500";
+      var e = r.e === "EXPEDICION" ? (exp === "ALL" ? allExp : EXP_GESTION[exp]) : r.e;
+      var p = r.p === "EXPEDICION" ? (exp === "ALL" ? allExp : EXP_GESTION[exp]) : r.p;
       return (
         '<tr><td style="padding:9px 14px;">' + r.s + "</td>" +
         cell(e, false) + cell(p, true) + cell(r.i, false) + "</tr>"
@@ -56,7 +58,7 @@
       '<div class="xtable-wrap"><table class="xtable"><thead><tr><th style="text-align:left; width:40%;">Servicio adicional</th>' +
       "<th>Esencial<br>$" + pe + "</th>" +
       '<th style="background:#f59e0b;">Protegido<br>$' + pp + " ★</th>" +
-      "<th>Integral<br>$2.900</th></tr></thead><tbody>" +
+      "<th>Integral<br>$" + pi + "</th></tr></thead><tbody>" +
       rows +
       "</tbody></table></div>" +
       '<p class="extras-note">¿Tasas del gobierno (estudio, expedición oficial, cédula)? Están en la caja amarilla de arriba. Todo adicional se confirma por escrito antes de ejecutarse — sin sorpresas.</p>';
