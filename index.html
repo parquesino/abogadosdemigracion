@@ -134,6 +134,16 @@
         .footer .brand { font-size: 1.125rem; margin-bottom: 0.25rem; color: white; font-weight: 600; }
         .footer a { color: #9CA3AF; text-decoration: none; }
         .footer a:hover { color: #ffffff; text-decoration: underline; }
+        .how-grid { display: grid; gap: 1.5rem; grid-template-columns: 1fr; }
+        @media (min-width: 700px) { .how-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 1100px) { .how-grid { grid-template-columns: repeat(3, 1fr); } }
+        .how-card { background: #fff; border: 1px solid #e2e8f0; border-radius: .75rem; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0,0,0,.08); }
+        .how-card img { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; }
+        .how-body { padding: 1.5rem; font-family: Arial,Helvetica,sans-serif; }
+        .how-title { margin: 0 0 .5rem; display: flex; align-items: center; gap: .6rem; }
+        .how-title span { min-width: 32px; height: 32px; border-radius: 50%; background: #0f2040; color: #fff; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; }
+        .how-title b { color: #0f2040; font-size: 1.1rem; }
+        .how-text { margin: 0; font-size: .92rem; color: #475569; }
 </style>
 </head>
 <body>
@@ -201,30 +211,48 @@
             <div class="container">
                 <h2 class="section-title">Cómo trabajamos: de la llamada a la cédula, sin caos</h2>
                 <p class="section-sub">Un proceso diseñado para que nunca persigas un papel ni te preguntes qué sigue. Tecnología + abogada senior, de inicio a fin.</p>
-                <div style="display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(250px,1fr));">
-                    <div style="display:flex; gap:.9rem; align-items:flex-start; background:#fff; border:1px solid #e2e8f0; border-radius:.75rem; padding:1.25rem;">
-                        <div style="min-width:38px; height:38px; border-radius:50%; background:#0f2040; color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-family:Arial,Helvetica,sans-serif;">1</div>
-                        <div style="font-family:Arial,Helvetica,sans-serif;"><b style="color:#0f2040;">Consulta estratégica ($80)</b><br><span style="font-size:.9rem; color:#475569;">Camila diagnostica tu caso en llamada. El mismo día recibes el acta y tu propuesta con el plan confirmado, abonable al contratar.</span></div>
+                <div class="how-grid">
+                    <div class="how-card">
+                        <img src="img/paso1.jpg" alt="Consulta estratégica por videollamada" loading="lazy" onerror="this.style.display='none';">
+                        <div class="how-body">
+                            <p class="how-title"><span>1</span><b>Consulta estratégica ($80)</b></p>
+                            <p class="how-text">Camila diagnostica tu caso en llamada. El mismo día recibes el acta y tu propuesta con el plan confirmado, abonable al contratar.</p>
+                        </div>
                     </div>
-                    <div style="display:flex; gap:.9rem; align-items:flex-start; background:#fff; border:1px solid #e2e8f0; border-radius:.75rem; padding:1.25rem;">
-                        <div style="min-width:38px; height:38px; border-radius:50%; background:#0f2040; color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-family:Arial,Helvetica,sans-serif;">2</div>
-                        <div style="font-family:Arial,Helvetica,sans-serif;"><b style="color:#0f2040;">Firma y paga online</b><br><span style="font-size:.9rem; color:#475569;">Firma digital en tu propuesta, factura legal automática y pago con tarjeta (hasta en cuotas según tu plan). Sin vueltas ni anticipos en efectivo.</span></div>
+                    <div class="how-card">
+                        <img src="img/paso2.jpg" alt="Firma digital y pago online de la propuesta" loading="lazy" onerror="this.style.display='none';">
+                        <div class="how-body">
+                            <p class="how-title"><span>2</span><b>Firma y paga online</b></p>
+                            <p class="how-text">Firma digital en tu propuesta, factura legal automática y pago con tarjeta (hasta en cuotas según tu plan). Sin vueltas ni anticipos en efectivo.</p>
+                        </div>
                     </div>
-                    <div style="display:flex; gap:.9rem; align-items:flex-start; background:#fff; border:1px solid #e2e8f0; border-radius:.75rem; padding:1.25rem;">
-                        <div style="min-width:38px; height:38px; border-radius:50%; background:#0f2040; color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-family:Arial,Helvetica,sans-serif;">3</div>
-                        <div style="font-family:Arial,Helvetica,sans-serif;"><b style="color:#0f2040;">Acceso inmediato a Sofi</b><br><span style="font-size:.9rem; color:#475569;">Al pagar se activa tu caso y entras al portal con tu código: cuestionarios, plantillas y tu checklist desde el teléfono.</span></div>
+                    <div class="how-card">
+                        <img src="img/paso3.jpg" alt="Portal Sofi con tu checklist en el teléfono" loading="lazy" onerror="this.style.display='none';">
+                        <div class="how-body">
+                            <p class="how-title"><span>3</span><b>Acceso inmediato a Sofi</b></p>
+                            <p class="how-text">Al pagar se activa tu caso y entras al portal con tu código: cuestionarios, plantillas y tu checklist desde el teléfono.</p>
+                        </div>
                     </div>
-                    <div style="display:flex; gap:.9rem; align-items:flex-start; background:#fff; border:1px solid #e2e8f0; border-radius:.75rem; padding:1.25rem;">
-                        <div style="min-width:38px; height:38px; border-radius:50%; background:#0f2040; color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-family:Arial,Helvetica,sans-serif;">4</div>
-                        <div style="font-family:Arial,Helvetica,sans-serif;"><b style="color:#0f2040;">La IA adelanta el trabajo: extrae, redacta y revisa</b><br><span style="font-size:.9rem; color:#475569;">Sin formularios eternos: la IA hace el trabajo pesado —extrae tus datos, genera tus plantillas y elimina errores de tipeo— y tu abogada pone el criterio final antes de radicar.</span></div>
+                    <div class="how-card">
+                        <img src="img/paso4.jpg" alt="IA validando tus documentos" loading="lazy" onerror="this.style.display='none';">
+                        <div class="how-body">
+                            <p class="how-title"><span>4</span><b>La IA adelanta el trabajo: extrae, redacta y revisa</b></p>
+                            <p class="how-text">Sin formularios eternos: la IA hace el trabajo pesado —extrae tus datos, genera tus plantillas y elimina errores de tipeo— y tu abogada pone el criterio final antes de radicar.</p>
+                        </div>
                     </div>
-                    <div style="display:flex; gap:.9rem; align-items:flex-start; background:#fff; border:1px solid #e2e8f0; border-radius:.75rem; padding:1.25rem;">
-                        <div style="min-width:38px; height:38px; border-radius:50%; background:#0f2040; color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-family:Arial,Helvetica,sans-serif;">5</div>
-                        <div style="font-family:Arial,Helvetica,sans-serif;"><b style="color:#0f2040;">Radicación + seguimiento real</b><br><span style="font-size:.9rem; color:#475569;">Radicamos en SITAC, trackeamos a diario, respondemos requerimientos y te avisamos cada vencimiento. Todo en un expediente, no en chats dispersos.</span></div>
+                    <div class="how-card">
+                        <img src="img/paso5.jpg" alt="Seguimiento del caso radicado" loading="lazy" onerror="this.style.display='none';">
+                        <div class="how-body">
+                            <p class="how-title"><span>5</span><b>Radicación + seguimiento real</b></p>
+                            <p class="how-text">Radicamos en SITAC, trackeamos a diario, respondemos requerimientos y te avisamos cada vencimiento. Todo en un expediente, no en chats dispersos.</p>
+                        </div>
                     </div>
-                    <div style="display:flex; gap:.9rem; align-items:flex-start; background:#fff; border:1px solid #e2e8f0; border-radius:.75rem; padding:1.25rem;">
-                        <div style="min-width:38px; height:38px; border-radius:50%; background:#0f2040; color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-family:Arial,Helvetica,sans-serif;">6</div>
-                        <div style="font-family:Arial,Helvetica,sans-serif;"><b style="color:#0f2040;">Contigo hasta la cédula</b><br><span style="font-size:.9rem; color:#475569;">El trámite no termina con la visa aprobada: te guiamos en el registro, la cita y la obtención de tu cédula. La misma abogada que te recibió, te acompaña hasta el final.</span></div>
+                    <div class="how-card">
+                        <img src="img/paso6.jpg" alt="Entrega de la cédula de extranjería" loading="lazy" onerror="this.style.display='none';">
+                        <div class="how-body">
+                            <p class="how-title"><span>6</span><b>Contigo hasta la cédula</b></p>
+                            <p class="how-text">El trámite no termina con la visa aprobada: te guiamos en el registro, la cita y la obtención de tu cédula. La misma abogada que te recibió, te acompaña hasta el final.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="bridge">
