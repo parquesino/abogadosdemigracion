@@ -8,24 +8,24 @@
   var EXP_GESTION = { V: "$250", M: "$350", R: "$500" };
 
   var EXTRAS = [
-    { s: "Study payment <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">1</sup>", e: "$120", p: "$120", i: "✓" },
-    { s: "Issuance payment <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">2</sup>", e: "EXPEDICION", p: "EXPEDICION", i: "✓" },
-    { s: "Stay extension payment <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">3</sup>", e: "$143", p: "$143", i: "✓" },
-    { s: "Safe-conduct payment <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">4</sup>", e: "$70", p: "$70", i: "✓" },
-    { s: "Fingerprinting in Colombia for records <small>(FBI only; managed, costs included)</small> <sup style=\"color:#0f2040;font-weight:800;\">5</sup>", e: "$250", p: "$250", i: "✓" },
-    { s: "Records procurement USA/CA <small>(managed, costs included)</small> <sup style=\"color:#0f2040;font-weight:800;\">6</sup>", e: "$150", p: "$150", i: "✓" },
-    { s: "Records apostille USA/CA <small>(managed, costs included)</small> <sup style=\"color:#0f2040;font-weight:800;\">7</sup>", e: "$140", p: "$140", i: "✓" },
-    { s: "Migratory movements <small>(per certificate; managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">8</sup>", e: "$70", p: "$70", i: "✓" },
-    { s: "State apostilles USA/CA <small>(per apostille; managed, costs included)</small> <sup style=\"color:#0f2040;font-weight:800;\">9</sup>", e: "$160", p: "$160", i: "✓" },
-    { s: "Marriage registration in Colombia <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">10</sup>", e: "$300", p: "$250", i: "✓" },
     { s: "Official Spanish translations <small>(per page)</small>", e: "$20", p: "Up to 2 pages", i: "✓" },
     { s: "Requirements analysis + response", e: "$80", p: "Up to 2", i: "All" },
     { s: "Re-application after inadmission", e: "$80", p: "Up to 1 time", i: "All" },
     { s: "Stay extension request", e: "$17", p: "✓", i: "✓" },
+    { s: "Stay extension payment <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">1</sup>", e: "$143", p: "$143", i: "✓" },
     { s: "FUT registration + safe-conduct appointment", e: "$90", p: "$90", i: "✓" },
+    { s: "Safe-conduct payment <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">2</sup>", e: "$70", p: "$70", i: "✓" },
     { s: "Administrative process + first appointment", e: "$90", p: "$90", i: "✓" },
+    { s: "Fingerprinting in Colombia for records <small>(FBI only; managed, costs included)</small> <sup style=\"color:#0f2040;font-weight:800;\">3</sup>", e: "$250", p: "$250", i: "✓" },
+    { s: "Records procurement USA/CA <small>(managed, costs included)</small> <sup style=\"color:#0f2040;font-weight:800;\">4</sup>", e: "$150", p: "$150", i: "✓" },
+    { s: "Records apostille USA/CA <small>(managed, costs included)</small> <sup style=\"color:#0f2040;font-weight:800;\">5</sup>", e: "$140", p: "$140", i: "✓" },
+    { s: "Migratory movements <small>(per certificate; managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">6</sup>", e: "$70", p: "$70", i: "✓" },
+    { s: "State apostilles USA/CA <small>(per apostille; managed, costs included)</small> <sup style=\"color:#0f2040;font-weight:800;\">7</sup>", e: "$160", p: "$160", i: "✓" },
+    { s: "Study payment <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">8</sup>", e: "$120", p: "$120", i: "✓" },
+    { s: "Issuance payment <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">9</sup>", e: "EXPEDICION", p: "EXPEDICION", i: "✓" },
     { s: "Cédula appointment <small>(additional)</small>", e: "$60", p: "Up to 2 times", i: "All needed" },
     { s: "Cédula pickup with POA", e: "$95", p: "$95", i: "✓" },
+    { s: "Marriage registration in Colombia <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">10</sup>", e: "$300", p: "$250", i: "✓" },
     { s: "Dependent visa <small>(inherits the holder's plan)</small>", e: "$350", p: "$300", i: "$200" }
   ];
 
@@ -45,8 +45,8 @@
     var pi = el.getAttribute("data-integral") || "2900";
     var OFF = { V: "183", M: "279", R: "408" };
     var expNote = exp === "ALL"
-      ? "Issuance: official fee per type (V $183 / M $279 / R $408) or managed with fee included."
-      : "Issuance " + exp + ": $" + OFF[exp] + " paid directly or " + EXP_GESTION[exp] + " managed ($" + OFF[exp] + " fee + $" + (parseInt(EXP_GESTION[exp].slice(1)) - parseInt(OFF[exp])) + " handling).";
+      ? "Official fee per type (V $183 / M $279 / R $408) or managed with fee included."
+      : EXP_GESTION[exp] + " managed = $" + OFF[exp] + " fee + $" + (parseInt(EXP_GESTION[exp].slice(1)) - parseInt(OFF[exp])) + " handling (direct: $" + OFF[exp] + ").";
 
     var allExp = "V $250 · M $350 · R $500";
     var rows = EXTRAS.map(function (r) {
@@ -67,16 +67,16 @@
       "<th>Turnkey<br>$" + pi + "</th></tr></thead><tbody>" +
       rows +
       "</tbody></table></div>" +
-      '<p class="extras-note">¹ Study: $56 paid directly or $120 managed ($56 fee + $64 handling).</p>' +
-      '<p class="extras-note">² ' + expNote + '</p>' +
-      '<p class="extras-note">³ Stay extension: $150,000 COP official fee (≈$46 USD). Managed: $143 ($46 fee + $97 handling).</p>' +
-      '<p class="extras-note">⁴ Safe-conduct: $88,000 COP official fee (≈$27 USD). Managed: $70 ($27 fee + $43 handling).</p>' +
-      '<p class="extras-note">⁵ Fingerprinting: certified provider $400,000 COP (≈$123 USD) + DHL shipping ≈$230,000 COP (≈$71 USD) + $56 handling = $250.</p>' +
-      '<p class="extras-note">⁶ Records procurement: official certified provider $75 USD + $75 handling = $150.</p>' +
-      '<p class="extras-note">⁷ Records apostille: certified company $70 USD + $70 handling = $140.</p>' +
-      '<p class="extras-note">⁸ Migratory movements certificate: $89,000 COP official fee (≈$27 USD). Managed: $70 ($27 fee + $43 handling).</p>' +
-      '<p class="extras-note">⁹ State apostilles: certified company $80 USD + $80 handling = $160.</p>' +
-      '<p class="extras-note">¹⁰ Marriage registration: notary ≈$300,000 COP (≈$92 USD). Managed: $300 Essential / $250 Protected.</p>';
+      '<p class="extras-note">¹ $143 managed = $150,000 COP official fee (≈$46 USD) + $97 handling (direct: $46).</p>' +
+      '<p class="extras-note">² $70 managed = $88,000 COP official fee (≈$27 USD) + $43 handling (direct: $27).</p>' +
+      '<p class="extras-note">³ $250 managed = certified provider $400,000 COP (≈$123 USD) + DHL shipping ≈$230,000 COP (≈$71 USD) + $56 handling.</p>' +
+      '<p class="extras-note">⁴ $150 managed = official certified provider $75 USD + $75 handling.</p>' +
+      '<p class="extras-note">⁵ $140 managed = certified company $70 USD + $70 handling.</p>' +
+      '<p class="extras-note">⁶ $70 managed = $89,000 COP official fee (≈$27 USD) + $43 handling (direct: $27).</p>' +
+      '<p class="extras-note">⁷ $160 managed = certified company $80 USD + $80 handling.</p>' +
+      '<p class="extras-note">⁸ $120 managed = $56 official fee + $64 handling (direct: $56).</p>' +
+      '<p class="extras-note">⁹ ' + expNote + '</p>' +
+      '<p class="extras-note">¹⁰ Notary ≈$300,000 COP (≈$92 USD). Managed: $300 Essential / $250 Protected.</p>';
   }
 
   if (document.readyState === "loading") {
