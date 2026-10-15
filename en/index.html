@@ -132,6 +132,16 @@
         .footer .brand { font-size: 1.125rem; margin-bottom: 0.25rem; color: white; font-weight: 600; }
         .footer a { color: #9CA3AF; text-decoration: none; }
         .footer a:hover { color: #ffffff; text-decoration: underline; }
+        .how-grid { display: grid; gap: 1.5rem; grid-template-columns: 1fr; }
+        @media (min-width: 700px) { .how-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 1100px) { .how-grid { grid-template-columns: repeat(3, 1fr); } }
+        .how-card { background: #fff; border: 1px solid #e2e8f0; border-radius: .75rem; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0,0,0,.08); }
+        .how-card img { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; }
+        .how-body { padding: 1.5rem; font-family: Arial,Helvetica,sans-serif; }
+        .how-title { margin: 0 0 .5rem; display: flex; align-items: center; gap: .6rem; }
+        .how-title span { min-width: 32px; height: 32px; border-radius: 50%; background: #0f2040; color: #fff; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; }
+        .how-title b { color: #0f2040; font-size: 1.1rem; }
+        .how-text { margin: 0; font-size: .92rem; color: #475569; }
 </style>
 </head>
 <body>
@@ -199,30 +209,48 @@
             <div class="container">
                 <h2 class="section-title">How we work: from the call to the cédula, zero chaos</h2>
                 <p class="section-sub">A process designed so you never chase a paper or wonder what's next. Technology + senior lawyer, start to finish.</p>
-                <div style="display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(250px,1fr));">
-                    <div style="display:flex; gap:.9rem; align-items:flex-start; background:#fff; border:1px solid #e2e8f0; border-radius:.75rem; padding:1.25rem;">
-                        <div style="min-width:38px; height:38px; border-radius:50%; background:#0f2040; color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-family:Arial,Helvetica,sans-serif;">1</div>
-                        <div style="font-family:Arial,Helvetica,sans-serif;"><b style="color:#0f2040;">Strategy consultation ($80)</b><br><span style="font-size:.9rem; color:#475569;">Camila diagnoses your case on a call. The same day you get the minutes and your proposal with a confirmed plan, credited on hire.</span></div>
+                <div class="how-grid">
+                    <div class="how-card">
+                        <img src="../img/step1.jpg" alt="Strategy consultation by video call" loading="lazy" onerror="this.style.display='none';">
+                        <div class="how-body">
+                            <p class="how-title"><span>1</span><b>Strategy consultation ($80)</b></p>
+                            <p class="how-text">Camila diagnoses your case on a call. The same day you get the minutes and your proposal with a confirmed plan, credited on hire.</p>
+                        </div>
                     </div>
-                    <div style="display:flex; gap:.9rem; align-items:flex-start; background:#fff; border:1px solid #e2e8f0; border-radius:.75rem; padding:1.25rem;">
-                        <div style="min-width:38px; height:38px; border-radius:50%; background:#0f2040; color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-family:Arial,Helvetica,sans-serif;">2</div>
-                        <div style="font-family:Arial,Helvetica,sans-serif;"><b style="color:#0f2040;">Sign &amp; pay online</b><br><span style="font-size:.9rem; color:#475569;">Digital signature on your proposal, automatic legal invoice and card payment (even in installments, per your plan).</span></div>
+                    <div class="how-card">
+                        <img src="../img/step2.jpg" alt="Digital signature and online proposal payment" loading="lazy" onerror="this.style.display='none';">
+                        <div class="how-body">
+                            <p class="how-title"><span>2</span><b>Sign &amp; pay online</b></p>
+                            <p class="how-text">Digital signature on your proposal, automatic legal invoice and card payment (even in installments, per your plan).</p>
+                        </div>
                     </div>
-                    <div style="display:flex; gap:.9rem; align-items:flex-start; background:#fff; border:1px solid #e2e8f0; border-radius:.75rem; padding:1.25rem;">
-                        <div style="min-width:38px; height:38px; border-radius:50%; background:#0f2040; color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-family:Arial,Helvetica,sans-serif;">3</div>
-                        <div style="font-family:Arial,Helvetica,sans-serif;"><b style="color:#0f2040;">Instant Sofi access</b><br><span style="font-size:.9rem; color:#475569;">Payment activates your case and you enter the portal with your code: questionnaires, templates and your checklist from your phone.</span></div>
+                    <div class="how-card">
+                        <img src="../img/step3.jpg" alt="Sofi portal with your checklist on the phone" loading="lazy" onerror="this.style.display='none';">
+                        <div class="how-body">
+                            <p class="how-title"><span>3</span><b>Instant Sofi access</b></p>
+                            <p class="how-text">Payment activates your case and you enter the portal with your code: questionnaires, templates and your checklist from your phone.</p>
+                        </div>
                     </div>
-                    <div style="display:flex; gap:.9rem; align-items:flex-start; background:#fff; border:1px solid #e2e8f0; border-radius:.75rem; padding:1.25rem;">
-                        <div style="min-width:38px; height:38px; border-radius:50%; background:#0f2040; color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-family:Arial,Helvetica,sans-serif;">4</div>
-                        <div style="font-family:Arial,Helvetica,sans-serif;"><b style="color:#0f2040;">A file that almost reviews itself</b><br><span style="font-size:.9rem; color:#475569;">Our AI pre-validates identity, amounts, policies and photos before your senior lawyer reviews. Fewer bounces, zero back-and-forth.</span></div>
+                    <div class="how-card">
+                        <img src="../img/step4.jpg" alt="AI validating your documents" loading="lazy" onerror="this.style.display='none';">
+                        <div class="how-body">
+                            <p class="how-title"><span>4</span><b>AI does the legwork: extracts, drafts and reviews</b></p>
+                            <p class="how-text">No endless forms: AI does the heavy lifting — extracting your data, generating your templates and killing typos — and your lawyer applies final judgment before filing.</p>
+                        </div>
                     </div>
-                    <div style="display:flex; gap:.9rem; align-items:flex-start; background:#fff; border:1px solid #e2e8f0; border-radius:.75rem; padding:1.25rem;">
-                        <div style="min-width:38px; height:38px; border-radius:50%; background:#0f2040; color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-family:Arial,Helvetica,sans-serif;">5</div>
-                        <div style="font-family:Arial,Helvetica,sans-serif;"><b style="color:#0f2040;">Filing + real follow-up</b><br><span style="font-size:.9rem; color:#475569;">We file in SITAC, track daily, answer requirements and alert you to every deadline. All in one file, not scattered chats.</span></div>
+                    <div class="how-card">
+                        <img src="../img/step5.jpg" alt="Filed case follow-up" loading="lazy" onerror="this.style.display='none';">
+                        <div class="how-body">
+                            <p class="how-title"><span>5</span><b>Filing + real follow-up</b></p>
+                            <p class="how-text">We file in SITAC, track daily, answer requirements and alert you to every deadline. All in one file, not scattered chats.</p>
+                        </div>
                     </div>
-                    <div style="display:flex; gap:.9rem; align-items:flex-start; background:#fff; border:1px solid #e2e8f0; border-radius:.75rem; padding:1.25rem;">
-                        <div style="min-width:38px; height:38px; border-radius:50%; background:#0f2040; color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-family:Arial,Helvetica,sans-serif;">6</div>
-                        <div style="font-family:Arial,Helvetica,sans-serif;"><b style="color:#0f2040;">Cédula in hand</b><br><span style="font-size:.9rem; color:#475569;">Migración Colombia registration, managed appointment and pickup with POA. The same lawyer who welcomed you, delivers.</span></div>
+                    <div class="how-card">
+                        <img src="../img/step6.jpg" alt="Cédula de extranjería handover" loading="lazy" onerror="this.style.display='none';">
+                        <div class="how-body">
+                            <p class="how-title"><span>6</span><b>With you until the cédula</b></p>
+                            <p class="how-text">The process doesn't end with an approved visa: we guide you through registration, the appointment and getting your cédula. The same lawyer who welcomed you walks with you to the end.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="bridge">
