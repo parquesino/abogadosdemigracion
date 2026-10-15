@@ -20,8 +20,8 @@
     { s: "Apostilla de antecedentes EE.UU./CA", e: "$140", p: "$140", i: "✓" },
     { s: "Movimientos migratorios <small>(por certificado)</small>", e: "$90", p: "$90", i: "✓" },
     { s: "Apostillas estatales EE.UU./CA <small>(por apostilla)</small>", e: "$160", p: "$160", i: "✓" },
-    { s: "Pago del estudio de la visa <small>(gestión)</small>", e: "$120", p: "$120", i: "✓" },
-    { s: "Pago de expedición <small>(gestión)</small>", e: "EXPEDICION", p: "EXPEDICION", i: "✓" },
+    { s: "Pago del estudio <small>(gestionado, tasa incluida)</small>", e: "$120", p: "$120", i: "✓" },
+    { s: "Pago de expedición <small>(gestionado, tasa incluida)</small>", e: "EXPEDICION", p: "EXPEDICION", i: "✓" },
     { s: "Cita de cédula de extranjería <small>(adicional)</small>", e: "$60", p: "Hasta 2 veces", i: "Todas las necesarias" },
     { s: "Recogida de cédula con poder", e: "$95", p: "$95", i: "✓" },
     { s: "Registro de matrimonio en Colombia", e: "$300", p: "$250", i: "✓" },
@@ -40,6 +40,12 @@
     var exp = (el.getAttribute("data-expedicion") || "M").toUpperCase();
     if (exp !== "ALL" && !EXP_GESTION[exp]) exp = "M";
     var pe = el.getAttribute("data-esencial") || "450";
+    var pp = el.getAttribute("data-protegido") || "650";
+    var pi = el.getAttribute("data-integral") || "2.900";
+    var OFF = { V: "183", M: "279", R: "408" };
+    var expNote = exp === "ALL"
+      ? "Expedición: tasa oficial según tipo (V $183 / M $279 / R $408) o gestión con tasa incluida."
+      : "Expedición " + exp + ": $" + OFF[exp] + " directo al Estado o $" + EXP_GESTION[exp] + " gestionado ($" + OFF[exp] + " tasa + $" + (parseInt(EXP_GESTION[exp].slice(1)) - parseInt(OFF[exp])) + " gestión).";
     var pp = el.getAttribute("data-protegido") || "650";
     var pi = el.getAttribute("data-integral") || "2.900";
 
@@ -62,6 +68,7 @@
       "<th>Integral<br>$" + pi + "</th></tr></thead><tbody>" +
       rows +
       "</tbody></table></div>" +
+      '<p class="extras-note">*Estudio: $56 directo al Estado o $120 gestionado ($56 tasa + $64 gestión). ' + expNote + '</p>' +
       '<p class="extras-note">¿Tasas del gobierno (estudio, expedición oficial, cédula)? Están en la caja amarilla de arriba. Todo adicional se confirma por escrito antes de ejecutarse — sin sorpresas.</p>';
   }
 
