@@ -25,7 +25,7 @@
     { s: "Issuance payment <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">9</sup>", e: "EXPEDICION", p: "EXPEDICION", i: "✓" },
     { s: "Cédula appointment <small>(additional)</small>", e: "$60", p: "Up to 2 times", i: "All needed" },
     { s: "Cédula pickup with POA", e: "$95", p: "$95", i: "✓" },
-    { s: "Marriage registration in Colombia <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">10</sup>", e: "$300", p: "$250", i: "✓" },
+    { s: "Marriage registration in Colombia <small>(managed, fee included)</small> <sup style=\"color:#0f2040;font-weight:800;\">10</sup>", e: "$300", p: "$300", i: "✓" },
     { s: "Dependent visa <small>(inherits the holder's plan)</small>", e: "$350", p: "$300", i: "$200" }
   ];
 
@@ -76,7 +76,7 @@
       '<p class="extras-note">⁷ $160 managed = certified company $80 USD + $80 handling.</p>' +
       '<p class="extras-note">⁸ $120 managed = $56 official fee + $64 handling (direct: $56).</p>' +
       '<p class="extras-note">⁹ ' + expNote + '</p>' +
-      '<p class="extras-note">¹⁰ Notary ≈$300,000 COP (≈$92 USD). Managed: $300 Essential / $250 Protected.</p>';
+      '<p class="extras-note">¹⁰ $300 managed = notary ≈$300,000 COP (≈$92 USD) + $208 handling.</p>';
   }
 
   if (document.readyState === "loading") {

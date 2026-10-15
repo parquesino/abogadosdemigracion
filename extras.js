@@ -25,7 +25,7 @@
     { s: "Pago de expedición <small>(gestionado, tasa incluida)</small> <sup style=\"color:#0f2040;font-weight:800;\">9</sup>", e: "EXPEDICION", p: "EXPEDICION", i: "✓" },
     { s: "Cita de cédula de extranjería <small>(adicional)</small>", e: "$60", p: "Hasta 2 veces", i: "Todas las necesarias" },
     { s: "Recogida de cédula con poder", e: "$95", p: "$95", i: "✓" },
-    { s: "Registro de matrimonio en Colombia <small>(gestionado, tasa incluida)</small> <sup style=\"color:#0f2040;font-weight:800;\">10</sup>", e: "$300", p: "$250", i: "✓" },
+    { s: "Registro de matrimonio en Colombia <small>(gestionado, tasa incluida)</small> <sup style=\"color:#0f2040;font-weight:800;\">10</sup>", e: "$300", p: "$300", i: "✓" },
     { s: "Visa de beneficiario <small>(hereda el plan del titular)</small>", e: "$350", p: "$300", i: "$200" }
   ];
 
@@ -78,7 +78,7 @@
       '<p class="extras-note">⁷ $160 gestionado = empresa certificada $80 USD + $80 gestión.</p>' +
       '<p class="extras-note">⁸ $120 gestionado = $56 tasa oficial + $64 gestión (directo: $56).</p>' +
       '<p class="extras-note">⁹ ' + expNote + '</p>' +
-      '<p class="extras-note">¹⁰ Notaría ≈$300.000 COP (≈$92 USD). Gestionado: $300 Esencial / $250 Protegido.</p>';
+      '<p class="extras-note">¹⁰ $300 gestionado = notaría ≈$300.000 COP (≈$92 USD) + $208 gestión.</p>';
   }
 
   if (document.readyState === "loading") {
