@@ -8,24 +8,24 @@
   var EXP_GESTION = { V: "$250", M: "$350", R: "$500" };
 
   var EXTRAS = [
+    { s: "Pago del estudio <small>(gestionado, tasa incluida)</small> <sup style=\"color:#0f2040;font-weight:800;\">1</sup>", e: "$120", p: "$120", i: "✓" },
+    { s: "Pago de expedición <small>(gestionado, tasa incluida)</small> <sup style=\"color:#0f2040;font-weight:800;\">2</sup>", e: "EXPEDICION", p: "EXPEDICION", i: "✓" },
+    { s: "Pago de prórroga de permanencia <small>(gestionado, tasa incluida)</small> <sup style=\"color:#0f2040;font-weight:800;\">3</sup>", e: "$143", p: "$143", i: "✓" },
+    { s: "Pago de salvoconducto <small>(gestionado, tasa incluida)</small> <sup style=\"color:#0f2040;font-weight:800;\">4</sup>", e: "$70", p: "$70", i: "✓" },
+    { s: "Toma de huellas en Colombia para antecedentes <small>(solo FBI; gestionado, costos incluidos)</small> <sup style=\"color:#0f2040;font-weight:800;\">5</sup>", e: "$250", p: "$250", i: "✓" },
+    { s: "Adquisición de antecedentes EE.UU./CA <small>(gestionado, costos incluidos)</small> <sup style=\"color:#0f2040;font-weight:800;\">6</sup>", e: "$150", p: "$150", i: "✓" },
+    { s: "Apostilla de antecedentes EE.UU./CA <small>(gestionado, costos incluidos)</small> <sup style=\"color:#0f2040;font-weight:800;\">7</sup>", e: "$140", p: "$140", i: "✓" },
+    { s: "Movimientos migratorios <small>(por certificado; gestionado, tasa incluida)</small> <sup style=\"color:#0f2040;font-weight:800;\">8</sup>", e: "$70", p: "$70", i: "✓" },
+    { s: "Apostillas estatales EE.UU./CA <small>(por apostilla; gestionado, costos incluidos)</small> <sup style=\"color:#0f2040;font-weight:800;\">9</sup>", e: "$160", p: "$160", i: "✓" },
+    { s: "Registro de matrimonio en Colombia <small>(gestionado, tasa incluida)</small> <sup style=\"color:#0f2040;font-weight:800;\">10</sup>", e: "$300", p: "$250", i: "✓" },
     { s: "Traducciones oficiales al español <small>(por página)</small>", e: "$20", p: "Máximo 2 páginas", i: "✓" },
     { s: "Análisis de requerimientos + respuesta", e: "$80", p: "Hasta 2", i: "Todos" },
     { s: "Reaplicación por inadmisión", e: "$80", p: "Hasta 1 vez", i: "Todas" },
     { s: "Solicitud de prórroga de permanencia", e: "$17", p: "✓", i: "✓" },
-    { s: "Pago de prórroga de permanencia <sup style=\"color:#0f2040;font-weight:800;\">3</sup>", e: "$143", p: "$143", i: "✓" },
     { s: "Registro FUT + cita de salvoconducto", e: "$90", p: "$90", i: "✓" },
-    { s: "Pago de salvoconducto <small>(gestionado, tasa incluida)</small> <sup style=\"color:#0f2040;font-weight:800;\">5</sup>", e: "$70", p: "$70", i: "✓" },
     { s: "Proceso administrativo + primera cita", e: "$90", p: "$90", i: "✓" },
-    { s: "Toma de huellas en Colombia para antecedentes <small>(solo FBI)</small>", e: "$250", p: "$250", i: "✓" },
-    { s: "Adquisición de antecedentes EE.UU./CA", e: "$150", p: "$150", i: "✓" },
-    { s: "Apostilla de antecedentes EE.UU./CA", e: "$140", p: "$140", i: "✓" },
-    { s: "Movimientos migratorios <small>(por certificado)</small> <sup style=\"color:#0f2040;font-weight:800;\">4</sup>", e: "$70", p: "$70", i: "✓" },
-    { s: "Apostillas estatales EE.UU./CA <small>(por apostilla)</small>", e: "$160", p: "$160", i: "✓" },
-    { s: "Pago del estudio <small>(gestionado, tasa incluida)</small> <sup style=\"color:#0f2040;font-weight:800;\">1</sup>", e: "$120", p: "$120", i: "✓" },
-    { s: "Pago de expedición <small>(gestionado, tasa incluida)</small> <sup style=\"color:#0f2040;font-weight:800;\">2</sup>", e: "EXPEDICION", p: "EXPEDICION", i: "✓" },
     { s: "Cita de cédula de extranjería <small>(adicional)</small>", e: "$60", p: "Hasta 2 veces", i: "Todas las necesarias" },
     { s: "Recogida de cédula con poder", e: "$95", p: "$95", i: "✓" },
-    { s: "Registro de matrimonio en Colombia", e: "$300", p: "$250", i: "✓" },
     { s: "Visa de beneficiario <small>(hereda el plan del titular)</small>", e: "$350", p: "$300", i: "$200" }
   ];
 
@@ -72,8 +72,13 @@
       '<p class="extras-note">¹ Estudio: $56 directo al Estado o $120 gestionado ($56 tasa + $64 gestión).</p>' +
       '<p class="extras-note">² ' + expNote + '</p>' +
       '<p class="extras-note">³ Prórroga de permanencia: tasa oficial $150.000 COP (≈$46 USD). Gestionado: $143 ($46 tasa + $97 gestión).</p>' +
-      '<p class="extras-note">⁴ Certificado de movimientos migratorios: tasa oficial $89.000 COP (≈$27 USD). Gestionado: $70 ($27 tasa + $43 gestión).</p>' +
-      '<p class="extras-note">⁵ Salvoconducto: tasa oficial $88.000 COP (≈$27 USD). Gestionado: $70 ($27 tasa + $43 gestión).</p>';
+      '<p class="extras-note">⁴ Salvoconducto: tasa oficial $88.000 COP (≈$27 USD). Gestionado: $70 ($27 tasa + $43 gestión).</p>' +
+      '<p class="extras-note">⁵ Toma de huellas: proveedor certificado $400.000 COP (≈$123 USD) + envío DHL ≈$230.000 COP (≈$71 USD) + $56 gestión = $250.</p>' +
+      '<p class="extras-note">⁶ Adquisición de antecedentes: proveedor certificado oficial $75 USD + $75 gestión = $150.</p>' +
+      '<p class="extras-note">⁷ Apostilla de antecedentes: empresa certificada $70 USD + $70 gestión = $140.</p>' +
+      '<p class="extras-note">⁸ Certificado de movimientos migratorios: tasa oficial $89.000 COP (≈$27 USD). Gestionado: $70 ($27 tasa + $43 gestión).</p>' +
+      '<p class="extras-note">⁹ Apostillas estatales: empresa certificada $80 USD + $80 gestión = $160.</p>' +
+      '<p class="extras-note">¹⁰ Registro de matrimonio: notaría ≈$300.000 COP (≈$92 USD). Gestionado: $300 Esencial / $250 Protegido.</p>';
   }
 
   if (document.readyState === "loading") {
