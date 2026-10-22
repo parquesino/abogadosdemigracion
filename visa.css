@@ -138,3 +138,10 @@ header h2 { font-size: 1.1rem; font-weight: 400; margin-bottom: 2.25rem; max-wid
 @media (min-width: 768px) { .reviews-grid { grid-template-columns: repeat(3, 1fr); } }
 .plan3 .amt small { font-size: 0.9rem; color: #64748b; font-weight: 400; font-family: Arial,Helvetica,sans-serif; }
 .final-cta .header-cta-primary { background:#c8a96a; color:#0f2040; }
+.wa-float { position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 60; display: flex; align-items: center; gap: .6rem; text-decoration: none; opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .4s ease, transform .4s ease; }
+.wa-float.show { opacity: 1; transform: none; pointer-events: auto; }
+.wa-float .wa-tip { background: #0f2040; color: #fff; font-family: Arial,Helvetica,sans-serif; font-weight: 700; font-size: .82rem; padding: .55rem .9rem; border-radius: .6rem; white-space: nowrap; box-shadow: 0 8px 20px -6px rgba(15,32,64,.4); }
+.wa-float .wa-btn { position: relative; width: 60px; height: 60px; border-radius: 50%; background: #22C55E; display: flex; align-items: center; justify-content: center; box-shadow: 0 12px 28px -8px rgba(34,197,94,.65); flex-shrink: 0; }
+.wa-float .wa-btn::after { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 2px solid #22C55E; animation: waPulse 2s ease-out infinite; }
+@keyframes waPulse { 0% { transform: scale(1); opacity: .8; } 100% { transform: scale(1.55); opacity: 0; } }
+.wa-float .wa-btn svg { width: 30px; height: 30px; stroke: #fff; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
