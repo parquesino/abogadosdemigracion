@@ -134,3 +134,5 @@ header h2 { font-size: 1.1rem; font-weight: 400; margin-bottom: 2.25rem; max-wid
 .xtable td small { color: #64748b; }
 .xtable .hl { background: #FEF9E7; border: 1px solid #c8a96a; border-radius: .375rem; padding: .1rem .5rem; font-weight: 800; white-space: nowrap; }
 .extras-note { font-size: .82rem; color: #6B7280; margin-top: .75rem; font-family: Arial,Helvetica,sans-serif; }
+
+@media (min-width: 768px) { .reviews-grid { grid-template-columns: repeat(3, 1fr); } }
