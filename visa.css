@@ -24,7 +24,7 @@ header h2 { font-size: 1.1rem; font-weight: 400; margin-bottom: 2.25rem; max-wid
 .hero-ctas-container { display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center; }
 @media (min-width: 640px) { .hero-ctas-container { flex-direction: row; gap: 1.5rem; } }
 .header-cta-primary { background-color: #0f2040; color: #fff; padding: 1rem 2rem; font-size: 1.125rem; }
-.header-cta-secondary { background-color: #fff; color: #0f2040; padding: 1rem 2rem; font-size: 1.125rem; border: 2px solid #0f2040; }
+.header-cta-secondary { background-color: #22C55E; color: #fff; padding: 1rem 2rem; font-size: 1.125rem; border: 2px solid #22C55E; }
 .content-section { padding: 4rem 0; }
 @media (min-width: 768px) { .content-section { padding: 6rem 0; } }
 .content-section.bg-gray { background-color: #f8fafc; }
