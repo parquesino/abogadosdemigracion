@@ -14,6 +14,7 @@
 - **Cards home**: anteojera SERVICIOS/LEGAL SERVICES + título corto.
 - **Testimonios web**: Socio (Viktoria+Joe con foto/iniciales), Trabajador (Gary con foto), Mercosur (John), Inversionista (Neil), Padres (Kisharna), Procesos (Jacob). EN espejo.
 - **Auditoría de conversión (oct 2026)**: tags de idioma coherentes en todas las reseñas (ES+EN); testimonios restaurados a texto íntegro (regla 7 corregida en cónyuge/nómada/residente/rentista/pensionado + EN spouse); sección "Tu vida en Colombia es demasiado importante para el ensayo y error" + cita Steven Russo portada a las 30 landings; logo del footer ya sin link (no apunta a Wix).
+- **Modelo precio único (oct 2026)**: fuera Esencial e Integral de la web en las 30 landings; precio oficial único ex-Protegido ($540 / $650 / $760 según visa; $300 beneficiario) + garantía de reaplicación por inadmisión sin honorarios hasta la aprobación + tabla "Otros costos" por visa (sin `extras.js`). Verificado sin restos de planes en landings.
 
 ## Pendiente (web)
 
@@ -22,6 +23,8 @@
 3. Decidir Chaty: mantenerlo hasta verificar el flotante nativo en producción unos días, luego cancelar $15/mes.
 4. `sitemap.xml`: dado de alta en Search Console el 22/10 (dio error transitorio, luego leyó bien). Vigilar indexación.
 5. Tiers de precio del home listan visas sin landing: "Estudiante", "Médico" e "Independiente". Crear landings o re-marcar el tier cuando se quiera.
+6. Homes (`/` y `/en/`) aún con 3 planes (cards, tiers, sección de planes, tabla de tarifas, FAQ): decidir y aplicar el modelo de precio único.
+7. Confirmar cifra de matrimonio en notaría en "Otros costos" ($250.000 COP publicado vs ≈$300.000 en nota de `extras.js`).
 
 ## Decisiones vigentes
 
@@ -29,6 +32,7 @@
 - Testimonios web: texto íntegro, EN = traducción propia marcada pendiente de aprobación, tag coherente.
 - No tocar `visa-mercosur` etc. fuera de lo listado sin revisar (plantillas frágiles pre-unificación ya resueltas).
 - Logo del footer sin enlace (el del navbar sí enlaza a `/` o `/en/`).
+- Precio oficial único por visa en web (ex-Protegido); Esencial (descuento) e Integral ($2.900) solo en consulta, sin mención web. Garantía: reaplicaciones por inadmisión sin honorarios hasta la aprobación; cada re-estudio oficial ($56) lo paga el cliente; no cubre rechazo definitivo.
 
 ## Credenciales (dónde, NUNCA el valor)
 
