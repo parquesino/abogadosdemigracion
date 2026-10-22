@@ -136,3 +136,4 @@ header h2 { font-size: 1.1rem; font-weight: 400; margin-bottom: 2.25rem; max-wid
 .extras-note { font-size: .82rem; color: #6B7280; margin-top: .75rem; font-family: Arial,Helvetica,sans-serif; }
 
 @media (min-width: 768px) { .reviews-grid { grid-template-columns: repeat(3, 1fr); } }
+.plan3 .amt small { font-size: 0.9rem; color: #64748b; font-weight: 400; font-family: Arial,Helvetica,sans-serif; }
