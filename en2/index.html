@@ -44,6 +44,17 @@
         .tiers div + div { border-top:1px dashed #E5E7EB; }
 
         .tiers b { color:#0f2040; white-space:nowrap; }
+
+        .hero-split { display:grid; gap:1.75rem; align-items:center; margin-top:2rem; text-align:left; }
+        @media (min-width:900px) { .hero-split { grid-template-columns:1.05fr .95fr; } }
+        .hero-value { list-style:none; padding:0; margin:0 0 1.25rem 0; display:grid; gap:.65rem; font-family:Arial,Helvetica,sans-serif; }
+        .hero-value li { background:#fff; border:1px solid #E5E7EB; border-left:4px solid #c8a96a; border-radius:.6rem; padding:.75rem .95rem; font-size:.98rem; color:#1e293b; line-height:1.5; }
+        .hero-value li b { color:#0f2040; }
+        .hero-value li.hero-promise { border-left-color:#22C55E; background:#F0FDF4; font-size:1.02rem; }
+        .hero-photo { margin:0; }
+        .hero-photo img { width:100%; max-width:340px; border-radius:.75rem; box-shadow:0 25px 50px -12px rgba(0,0,0,.25); display:block; margin:0 auto; }
+        .hero-photo figcaption { text-align:center; font-family:Arial,Helvetica,sans-serif; font-size:.82rem; color:#475569; margin-top:.6rem; line-height:1.5; }
+        .hero-photo figcaption b { color:#0f2040; }
     </style><!-- PAGE-SPECIFIC: only these rules are page-specific; shared styles live in visa.css -->
 </head>
 <body>
@@ -69,12 +80,23 @@
         <div class="container">
             <a href="#reviews" class="trust-badge-hero">⭐ ⭐ ⭐ ⭐ ⭐ 5/5 · 80+ real reviews on Google</a>
             <h1>Immigration Lawyer Colombia: which visa is yours — and how to avoid the rejection that blocks you for 6 months?</h1>
-            <h2>Camila Ocampo, senior attorney, diagnoses your route on the call: marry, retire, work remotely, invest — or citizenship. SITAC filing, requirements and our promise: if inadmissible, we re-apply with no legal fees.</h2>
-            <div class="hero-ctas-container">
-                <a href="https://calendar.app.google/siwsNHLYNfW3CHSp6" class="btn header-cta-primary">Book a strategy consultation – $80 (100% credited)</a>
-                <a href="https://wa.me/573223395612?text=Hi%20Camila%2C%20I%27m%20not%20sure%20which%20Colombian%20visa%20I%20need.%20Can%20you%20help%20me%20confirm%20my%20route%3F" target="_blank" class="btn header-cta-secondary" style="background:#22C55E; color:#fff; border:2px solid #22C55E;">Not sure which visa? Chat on WhatsApp</a>
+            <h2>Camila Ocampo, senior attorney, diagnoses your route on the call: marry, retire, work remotely, invest — or citizenship. SITAC filing and requirements handled end to end.</h2>
+            <div class="hero-split">
+                <div>
+                    <ul class="hero-value">
+                        <li class="hero-promise"><b>Our promise:</b> if inadmissible, we re-apply with no legal fees — until approval.</li>
+                        <li><b>Same senior lawyer</b> from start to finish. No juniors on cases.</li>
+                    </ul>
+                    <div class="hero-ctas-container">
+                        <a href="https://calendar.app.google/siwsNHLYNfW3CHSp6" class="btn header-cta-primary">Book a strategy consultation – $80 (100% credited)</a>
+                        <a href="https://wa.me/573223395612?text=Hi%20Camila%2C%20I%27m%20not%20sure%20which%20Colombian%20visa%20I%20need.%20Can%20you%20help%20me%20confirm%20my%20route%3F" target="_blank" class="btn header-cta-secondary" style="background:#22C55E; color:#fff; border:2px solid #22C55E;">Not sure which visa? Chat on WhatsApp</a>
+                    </div>
+                </div>
+                <figure class="hero-photo">
+                    <img src="../img/camila-hero.jpg" alt="Camila Ocampo, Colombian immigration lawyer" fetchpriority="high">
+                    <figcaption><b>Camila Ocampo</b> · Founder, senior attorney<br>★★★★★ 5/5 · 80+ real reviews on Google</figcaption>
+                </figure>
             </div>
-            <p style="font-size:0.875rem; margin-top:1.5rem; color:#64748b; font-family:Arial,Helvetica,sans-serif;">✓ Same senior lawyer start to finish ✓ Verdict on the call ✓ Official fees: study $56 + issue V $183 / M $279 / R $408</p>
         </div>
     </header>
 
