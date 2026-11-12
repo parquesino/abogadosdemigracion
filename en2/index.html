@@ -46,6 +46,8 @@
         .tiers b { color:#0f2040; white-space:nowrap; }
         .facts .fact svg { width:42px; height:42px; color:#0f2040; display:block; margin-bottom:.6rem; }
         .facts .fact a { color:#0f2040; font-weight:700; }
+        .facts .fact .bridge-avatar { width:48px; height:48px; border-radius:50%; object-fit:cover; display:block; margin-bottom:.6rem; }
+        .facts .fact .bridge-avatar-fallback { display:none; width:48px; height:48px; border-radius:50%; background:#0f2040; color:#fff; align-items:center; justify-content:center; font-weight:700; font-family:Arial,Helvetica,sans-serif; margin-bottom:.6rem; }
         .navbar-logo { height:56px; max-width:260px; }
 
         .hero-lead { display:grid; gap:1.5rem; align-items:center; margin-top:1rem; }
@@ -143,10 +145,12 @@
                 <p class="section-sub">Filing alone is legal — and expensive. Two real cases of what DIY cost them, and how Camila fixed it. Full texts below, unedited.</p>
                 <div class="facts" style="margin-top:0;">
                     <div class="fact">
+                        <div><img src="../robin-criel.png" alt="Robin Criel" loading="lazy" class="bridge-avatar" onerror="this.style.display='none';document.getElementById('bridge-rce').style.display='flex';"><div id="bridge-rce" class="bridge-avatar-fallback">RC</div></div>
                         <b>Rejected with AI → approved with Camila</b>
                         <span>Robin, from Belgium, doubted he needed a lawyer, filed with AI as his lawyer, got rejected. Then Camila took over. <a href="#review-robin">Read Robin's full review ↓</a></span>
                     </div>
                     <div class="fact">
+                        <div><img src="../sachi-a.png" alt="Sachi A." loading="lazy" class="bridge-avatar" onerror="this.style.display='none';document.getElementById('bridge-saa').style.display='flex';"><div id="bridge-saa" class="bridge-avatar-fallback">SA</div></div>
                         <b>Inadmitted filing solo → approved in a week</b>
                         <span>Sachi, from Hawaii, filed alone to save money, got inadmitted — after paying for useless notary steps. Camila fixed it and re-filed. <a href="#review-sachi">Read Sachi's full review ↓</a></span>
                     </div>
