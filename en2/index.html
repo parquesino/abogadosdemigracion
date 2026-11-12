@@ -47,7 +47,8 @@
 
         .hero-lead { display:grid; gap:1.5rem; align-items:center; margin-top:1rem; }
         .hero-lead .hero-h1 { margin:0; }
-        @media (max-width:899px) { .hero-lead { gap:1rem; margin-top:.5rem; } .hero-lead .hero-h1 { font-size:1.68rem; line-height:1.22; } .hero-photo img { max-width:230px; } .hero-photo figcaption { margin-top:.5rem; } .hero-attorney-name { font-size:1.2rem; } }
+        @media (max-width:899px) { header { padding-top:2rem; } .hero-lead { gap:1rem; margin-top:.5rem; } .hero-lead .hero-h1 { font-size:1.68rem; line-height:1.22; } .hero-photo img { max-width:230px; } .hero-photo figcaption { margin-top:.5rem; } .hero-attorney-name { font-size:1.2rem; } }
+        .hero-lead .hero-h1 .h1-kw { font-weight:700; text-decoration:underline; text-decoration-color:#c8a96a; text-decoration-thickness:3px; text-underline-offset:6px; }
         @media (min-width:900px) { .hero-lead { grid-template-columns:.92fr 1.08fr; grid-template-areas:"photo title" "photo ctas"; column-gap:2.5rem; } .hero-lead .hero-photo { grid-area:photo; } .hero-lead .hero-h1 { grid-area:title; text-align:left; font-size:2.15rem; line-height:1.2; } .hero-lead .hero-ctas { grid-area:ctas; } }
         .hero-photo { margin:0; }
         .hero-photo img { width:100%; max-width:340px; border-radius:.75rem; box-shadow:0 25px 50px -12px rgba(0,0,0,.25); display:block; margin:0 auto; }
@@ -81,7 +82,7 @@
     <header>
         <div class="container">
             <div class="hero-lead">
-                <h1 class="hero-h1">Immigration Lawyer Colombia: one senior attorney from start to finish — total transparency, zero stress — and if inadmissible, we re-apply with no legal fees until approval.</h1>
+                <h1 class="hero-h1"><span class="h1-kw">Immigration Lawyer for Colombia:</span> one senior attorney from start to finish — total transparency, zero stress — and if inadmissible, we re-apply with no legal fees until approval.</h1>
                 <figure class="hero-photo">
                     <img src="../img/camila-hero.jpg" alt="Camila Ocampo, Colombian immigration lawyer" fetchpriority="high">
                     <figcaption><span class="hero-attorney-name">Camila Ocampo</span><span class="hero-attorney-role">Founder, senior attorney</span><span class="hero-stars">★★★★★</span><span class="hero-reviews">5/5 · 80+ real reviews on Google</span></figcaption>
