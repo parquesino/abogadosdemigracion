@@ -59,7 +59,8 @@
         .hero-lead .hero-h1 { margin:0; }
         @media (max-width:899px) { header { padding-top:2rem; } .hero-lead { gap:1rem; margin-top:.5rem; } .hero-lead .hero-h1 { font-size:1.68rem; line-height:1.22; } .hero-photo img { max-width:230px; } .hero-photo figcaption { margin-top:.5rem; } .hero-attorney-name { font-size:1.2rem; } }
         .hero-lead .hero-h1 .h1-kw { font-weight:700; text-decoration:underline; text-decoration-color:#c8a96a; text-decoration-thickness:3px; text-underline-offset:6px; }
-        .bridge .n svg { width:20px; height:20px; }
+        .rates-details { max-width:820px; margin-left:auto; margin-right:auto; }
+        .rates-details summary { cursor:pointer; font-family:Arial,Helvetica,sans-serif; font-weight:700; color:#0f2040; text-align:center; font-size:1.02rem; padding:.9rem; border:1px solid #E5E7EB; border-radius:.6rem; background:#fff; }
         .wa-float .wa-btn { border:3px solid #fff; box-shadow:0 12px 28px -6px rgba(0,0,0,.5); }
         .hero-alt { font-family:Arial,Helvetica,sans-serif; font-size:.85rem; color:#475569; margin:.9rem 0 0; text-align:center; }
         .hero-alt a { color:#0f2040; font-weight:700; }
@@ -622,7 +623,9 @@
             <div class="container">
                 <h2 class="section-title">Full rate table</h2>
                 <p class="section-sub" style="text-align:center; color:#4B5563; max-width:700px; margin:0 auto;">Every service in USD, at a fixed price. The official cédula is paid in COP.</p>
-                <div class="xtable-wrap" style="margin-top:2rem;">
+                <details class="rates-details" style="margin-top:2rem;">
+                <summary>Full rate table (every service, fixed USD) ▾</summary>
+                <div class="xtable-wrap" style="margin-top:1rem;">
                 <table class="xtable">
                     <thead>
                         <tr style="background:#0f2040; color:#fff;">
@@ -650,6 +653,7 @@
                     </tbody>
                 </table>
                 </div>
+                </details>
                 <p class="extras-note">Each new filing after inadmission pays its $56 USD official study to the State; final rejections not covered.</p>
             </div>
         </section>
