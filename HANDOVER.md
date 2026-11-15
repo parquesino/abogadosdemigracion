@@ -84,6 +84,20 @@
 **HECHO (verificado por re-lectura):** guía ES `/visas-para-colombia/guia-visa-de-pensionado` (News1 ES, item `994f1848-ac94-49ba-b25d-9f7e8a3ef74c`) — sección "Enlace Relevante..." renombrada a "Enlaces Relevantes para Más Información", ampliada de 14 a 23 items (9 nuevos con `LINK`, formato existente ES): salario-mínimo-2026, requisitos-básicos, certificados-migratorios, tarifas-cancillería, salvoconducto, tarifas-migración-2026, Monitoreo #3, Monitoreo #5, nuevo-horario-cédula. Excluidos a petición: cada-vez-más-extranjeros y se-reduce-salario-mínimo. Sin duplicados. Backups en `Temp/opencode/guia_pensionado_{es,en}_backup_2026-10-31.json`.
 **Fechas:** ES y EN al 31-oct-2026. EN ampliada hoy de 9 a 21 items (12 nuevos verificados por re-lectura: urls=23, viejas 1 vez cada una; fecha EN al 31-oct con contenido cambiado). Nota: el primer PATCH clonó mal el molde (LIST_ITEM con lista anidada, 119 urls); reparado truncando a 1 nodo y reinsertando items simples. Vetos aplicados: appointment-at-migracion, will-the-minimum-wage (O1), requirements-2025 (legado).
 
+## Hub tránsito (guías + posts nuevos 2026-11-03, verificado por re-lectura)
+
+**Creados (IDs en `Temp/opencode/hub_transito_ids.json`):** guías News1 ES+EN con MISMO dataItemId (`tranmw0zvm7z`, preset aceptado): ES `/visas-para-colombia/guia-visa-transito-aeropuertario` (4 enlaces), EN `/colombian-visas/airport-transit-visa-guide` (4 enlaces); posts do-I-need-it ES (`necesitas-visa-transito...india-china-pakistan`, 3 enlaces) y EN (`do-indians-chinese...`, 3 enlaces), fechas 2026-11-03. Formato calcado de spouse/pensionado (espaciadores, LINK+UNDERLINE EN / LINK ES, anclas = títulos íntegros). Footers de las landings ES+EN apuntan ya a las guías reales (push `d16ea63`).
+
+## Video spouse + antecedentes (post nuevo 2026-11-03, verificado)
+
+**Post Newsroom EN** `/newsroom/colombia-spouse-visa-criminal-record-watch-first` (id `5132431d...`, oEmbed validado: título y canal coinciden; Short `lbsxqXwXtGw` 400px/700 con espaciadores; 5 enlaces + CTA WhatsApp con pre-rellenado del video; fecha 3-nov). **Enlazado desde la guía cónyuge EN** (Free Tools 22→23, fecha 3-nov). Incidencia: dos PATCH con molde/lista equivocados (las guías mezclan secciones colapsables y listas; el conteo "items lista" engaña) — reparado desde backup + inserción en la anidada correcta; verificación final urls=25, hijos=12, 0 duplicados.
+
+**Serie estrategia spouse (2026-11-03):** títulos con sufijo `| Spouse Visa Strategy #1` (abroad) y `#2` (criminal); caja "More in this strategy series" cruzada en ambos posts (hermanos + guía). Protocolo para el #3: post + caja con #1/#2 y añadir #3 a las cajas viejas.
+
+**Serie ES espejo (2026-11-03, verificado):** exterior `#1` + criminal `#2` con sufijos `| Estrategia de Visa de Cónyuge #N` y caja "Más de esta serie de estrategia" cruzada (hermanos + guía ES).
+
+**Video ES espejo (2026-11-03, verificado):** Short `2f8_W-NWW-U` (oEmbed: título ES y canal ok) → post Sala de Prensa `/sala-de-prensa/visa-conyuge-antecedentes-penales-mira-esto-primero` (id `11cc627d...`, 5 enlaces + CTA WhatsApp ES, fecha 3-nov) + enlace en guía cónyuge ES (24→25 urls en anidada verificada, fecha 3-nov). Sin sufijos de serie en ES (la serie numerada vive solo en EN por ahora).
+
 ## SEO snippets EN (2026-10-31)
 
 **Plantilla Our Services (usuario en dashboard):** meta con propuesta ($80, fees). **Titles por API (verificado):** `title` de LandingComercial solo alimenta `<title>`/og/twitter + meta (4 ocurrencias, cero en cuerpo visible) → renombrados sin riesgo visual: pensioner `Pensioner Visa Colombia 2026`, spouse `Spouse Visa Colombia 2026 (Type M)` (cortos a propósito: la plantilla añade "Fees, requirements & full legal service..."). Backups en `Temp/opencode/svc_title_*.json`. Deck completo de snippets (home, about, posts sin meta) entregado para pegar en dashboard.
