@@ -97,7 +97,7 @@
     'padding:13px 18px;display:flex;gap:18px;align-items:center;justify-content:space-between;' +
     'flex-wrap:wrap;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;' +
     'font-size:13.5px;line-height:1.4;text-align:left}' +
-    '.cp-texto{flex:1 1 360px;min-width:0}' +
+    '.cp-texto{flex:1 1 280px;min-width:0}' +
     '.cp-caja h2{margin:0 0 2px;font-size:14px;font-weight:700;color:#0f2040}' +
     '.cp-caja p{margin:0;color:#475569}' +
     '.cp-politica{display:inline-block;margin-top:4px;font-size:12px;color:#64748b;text-decoration:underline}' +
@@ -111,8 +111,8 @@
     '.cp-pie{display:inline;margin-left:10px;font:inherit;font-size:.85em;color:inherit;' +
     'background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;opacity:.75}' +
     '.cp-pie:hover{opacity:1}' +
-    '@media(max-width:760px){.cp-caja{flex-direction:column;align-items:stretch;gap:10px;padding:15px}' +
-    '.cp-acciones{flex-wrap:wrap}.cp-acciones button{flex:1 1 140px;min-width:0}}';
+    '@media(max-width:760px){.cp-caja{flex-direction:column;align-items:stretch;justify-content:flex-start;gap:10px;padding:14px}.cp-texto{flex:0 0 auto}' +
+    '.cp-acciones{flex-wrap:wrap;height:auto}.cp-acciones button{flex:1 1 0;min-width:0;height:auto}}';
 
   var caja = null;
 
