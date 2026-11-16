@@ -23,7 +23,7 @@ Sitio estático (HTML + `visa.css` + `img/`). Sin build. Deploy = push a `main` 
 - Esencial (descuento por caso robusto con tiempo) e Integral ($2.900) solo existen en consulta; ni mención en web.
 - Garantía: reaplicaciones por inadmisión sin honorarios hasta la aprobación. Cada nuevo estudio oficial ($56) lo paga el cliente al Estado. No cubre el rechazo definitivo.
 - Tablas a 2 columnas; "Otros costos" neutrales y propios de cada visa (matrimonio solo en cónyuge/compañero).
-- Pendiente confirmar: matrimonio en notaría $250.000 COP publicado vs ≈$300.000 en nota de `extras.js`.
+- Cifra de matrimonio en notaría: **$300.000 COP** (confirmada por el dueño 2026-11-16; ya publicada en las 4 landings).
 
 ## Reglas vigentes (oct-2026)
 

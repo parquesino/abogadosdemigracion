@@ -34,7 +34,7 @@
 3. Cancelar la cuenta de Chaty ($15/mes) cuando se confirme el flotante nativo unos días en producción.
 4. `sitemap.xml` (abogados): dado de alta en Search Console el 22/10 (dio error transitorio, luego leyó bien). Vigilar indexación + Security Issues.
 5. Tiers del home (abogados) listan visas sin landing: "Estudiante", "Médico" e "Independiente". Crear landings o re-marcar el tier.
-6. Confirmar cifra de matrimonio en notaría ($250.000 COP publicado vs ≈$300.000 en nota de `extras.js`).
+6. ~~Confirmar cifra de matrimonio en notaría~~ — **confirmada por el dueño el 2026-11-16: $300.000 COP**. Actualizada en las 4 landings (cónyuge, compañero permanente y sus versiones EN) y coincide con la nota de `extras.js`.
 7. Vigilar rebote de leads 48-72h tras quitar los 3 planes (ver "Caída de leads" abajo).
 8. Portales Wix (.com EN y .com.co ES): se actualizan en otra conversación (precios, garantía, planes fuera).
 
