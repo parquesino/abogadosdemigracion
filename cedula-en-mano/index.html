@@ -58,6 +58,22 @@
     #opiniones .reviews-grid{grid-template-columns:repeat(2,1fr);}
     #opiniones .google-review-card.full{grid-column:1/-1;}
     @media (min-width:900px){#opiniones .google-review-card.full .review-text{column-count:2;column-gap:2.5rem;}}
+    @media (max-width:899px){
+        #opiniones .reviews-grid{grid-template-columns:1fr;}
+    }
+    @media (max-width:640px){
+        .xtable-wrap{overflow:visible;border:0;background:transparent;border-radius:0;margin-top:1rem;}
+        .xtable{display:block;min-width:0;font-size:.95rem;}
+        .xtable thead{display:none;}
+        .xtable tbody{display:block;}
+        .xtable tr{display:block;background:#fff;border:1px solid #E2E8F0;border-radius:.75rem;padding:.85rem 1rem;margin-bottom:.7rem;}
+        .xtable td{display:block;border:0;padding:.18rem 0;background:transparent;}
+        .xtable tbody tr:nth-child(even) td{background:transparent;}
+        .xtable td:first-child{font-weight:800;color:#0f2040;margin-bottom:.3rem;}
+        .xtable td b{white-space:normal;}
+        .xtable td.no::before{content:"Por tu cuenta · ";font-weight:700;color:#B91C1C;}
+        .xtable td.yes::before{content:"Con nosotros · ";font-weight:700;color:#15803D;}
+    }
     .hero-c{padding:2rem 0 2.5rem;background:#F8FAFC;border-bottom:1px solid #E2E8F0;text-align:left;}
     .hero-c .container{display:grid;gap:1.75rem;align-items:center;}
     @media (min-width:900px){.hero-c .container{grid-template-columns:1fr 1fr;gap:2.5rem;}}
@@ -110,6 +126,7 @@
     .cupos-bar i{display:block;height:100%;width:6.67%;background:#c8a96a;}
     .cupos-note{margin:.4rem 0 0;font-size:.78rem;color:#64748b;}
     .form-nota{margin:.7rem 0 0;font-size:.8rem;color:#64748b;line-height:1.5;}
+    @media (max-width:899px){.hero-c h1{text-align:center;}}
     </style>
 </head>
 <body>
