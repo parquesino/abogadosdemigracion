@@ -102,12 +102,19 @@
     .oblig{margin-top:2rem;border:1px solid #E2E8F0;border-radius:.75rem;background:#fff;font-family:Arial,Helvetica,sans-serif;}
     .oblig summary{cursor:pointer;padding:1.1rem 1.25rem;font-weight:700;color:#0f2040;font-size:1rem;list-style:none;}
     .oblig summary::-webkit-details-marker{display:none;}
-    .oblig summary::after{content:"+";float:right;color:#c8a96a;font-weight:800;}
-    .oblig[open] summary::after{content:"–";}
+    .oblig summary::after{content:"▾";float:right;color:#c8a96a;font-weight:800;transition:transform .2s ease;}
+    .oblig[open] summary::after{transform:rotate(180deg);}
     .oblig[open] summary{border-bottom:1px solid #E2E8F0;}
     .oblig .oblig-body{padding:1rem 1.25rem 1.25rem;}
     .oblig ul{margin:0;padding-left:1.2rem;color:#475569;font-size:.94rem;line-height:1.7;}
     .oblig li{margin-bottom:.35rem;}
+    .cupos{margin:1rem 0 1.25rem;font-family:Arial,Helvetica,sans-serif;text-align:left;}
+    .cupos-top{display:flex;justify-content:space-between;align-items:baseline;font-size:.9rem;color:#0f2040;font-weight:700;margin-bottom:.4rem;}
+    .cupos-top span:last-child{font-weight:400;color:#64748b;font-size:.8rem;}
+    .cupos-bar{height:10px;background:#E2E8F0;border-radius:999px;overflow:hidden;}
+    .cupos-bar i{display:block;height:100%;width:6.67%;background:#c8a96a;}
+    .cupos-note{margin:.4rem 0 0;font-size:.78rem;color:#64748b;}
+    .form-nota{margin:.7rem 0 0;font-size:.8rem;color:#64748b;line-height:1.5;}
     </style>
 </head>
 <body>
@@ -149,7 +156,7 @@
                     <span class="hv-play" aria-hidden="true"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></span>
                 </button>
                 <p class="pie">Camila Ocampo, Abogada de Migración Colombiana</p>
-                <p class="prueba-video"><span class="estrellas">★★★★★</span> 5/5 · Más de 80 reseñas reales en Google</p>
+                <p class="prueba-video"><span class="estrellas">★★★★★</span> 5/5 · Más de 100 reseñas reales en Google</p>
             </div>
         </div>
     </section>
@@ -189,7 +196,7 @@
         <section id="compromisos" class="content-section bg-white">
             <div class="container">
                 <h2 class="section-title">Cuatro compromisos</h2>
-                <p class="section-sub">No prometemos tu visa: nadie honesto puede. Nos hacemos cargo de todo lo demás —el control, el riesgo, la presencia y el acompañamiento— para que tu única tarea sea firmar la propuesta y aparecer.</p>
+                <p class="section-sub">Nos hacemos cargo de todo lo demás —el control, el riesgo, la presencia y el acompañamiento— para que tu única tarea sea firmar la propuesta y aparecer.</p>
                 <div class="commit-grid">
                     <div class="commit-card">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h4M4 12h4M4 18h4"/><path d="M11 6h9M11 12h9M11 18h9"/></svg>
@@ -321,7 +328,7 @@
                     </div>
                     <div class="google-review-card" style="justify-content:center; text-align:center;">
                         <div style="color:#FBBC04; font-size:1.6rem; letter-spacing:2px;">★★★★★</div>
-                        <p style="font-weight:800; font-size:1.1rem; color:#0f2040; margin:.75rem 0 .25rem;">Más de 80 reseñas reales</p>
+                        <p style="font-weight:800; font-size:1.1rem; color:#0f2040; margin:.75rem 0 .25rem;">Más de 100 reseñas reales</p>
                         <p style="font-size:.9rem; color:#4B5563; margin:0 0 1.25rem;">Firma cinco estrellas en Google y Top 3 en Lawzana.</p>
                         <a href="#reservar" class="btn" style="background:#0f2040; color:#fff; padding:1rem 2rem; font-size:1.125rem;">Reservar mi cupo →</a>
                     </div>
@@ -380,10 +387,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="bridge">
-                    <div class="n">✓</div>
-                    <p><b>Tu tranquilidad, por sistema:</b> Sofi 24/7 · IA que valida antes de radicar · recordatorios de vencimientos · factura y pagos online · la misma senior de inicio a fin.</p>
-                </div>
             </div>
         </section>
 
@@ -411,14 +414,18 @@
 
         <section id="planes" class="content-section bg-gray">
             <div class="container">
-                <h2 class="section-title">Un precio fijo. Nada por fuera. Un cupo real.</h2>
+                <h2 class="section-title">Un precio fijo. Nada por fuera.</h2>
                 <p class="section-sub"><b>$4.500 USD</b> con tasas, cédula y seguro incluidos · 50% a la firma y 50% a la radicación · 15 casos en la cohorte de enero de 2027.</p>
                 <div style="max-width:640px; margin:0 auto;">
                     <div class="plan3 hero">
                         <span class="flag">Cohorte enero 2027 · 15 cupos</span>
                         <h3>Cédula en Mano</h3>
                         <p class="slogan">Tu visa, tu cédula y tu primer mes — sin papeleo, sin plataformas y sin pagar nada.</p>
-                        <p class="who"><b>Para quién:</b> quien tiene una vía legal clara y no quiere volver a entrar a una plataforma del Estado ni a una ventanilla.</p>
+                        <div class="cupos">
+                            <div class="cupos-top"><span>Quedan 14 de 15 cupos</span><span>1 reservado</span></div>
+                            <div class="cupos-bar"><i></i></div>
+                            <p class="cupos-note">Cohorte de enero 2027 · cierra el 15 de enero</p>
+                        </div>
                         <p class="amt">$4.500 <small>USD</small></p>
                         <p class="per">USD · todo incluido · 50% a la firma / 50% a la radicación</p>
                         <ul class="ok">
@@ -485,6 +492,7 @@
                     <div class="alert-box" style="margin-bottom:0; border-left-color:#22C55E; background:#F0FDF4;">
                         <p style="margin:0 0 .75rem;"><strong style="color:#166534;">Es para ti si…</strong></p>
                         <ul style="margin:0; padding-left:1.2rem; color:#166534; font-family:Arial,Helvetica,sans-serif;">
+                            <li>Hay algo importante que depende de tu visa: reunirte con tu familia, una inversión, tu jubilación o un negocio que quieres abrir.</li>
                             <li>Tienes una vía legal clara (la confirmamos en la consulta).</li>
                             <li>Puedes cubrir el programa y prefieres no volver a entrar a una plataforma del Estado ni a una ventanilla.</li>
                             <li>Quieres una abogada senior liderando todo, no un pool de proveedores que tú tengas que gestionar.</li>
@@ -496,6 +504,7 @@
                         <ul style="margin:0; padding-left:1.2rem; color:#991B1B; font-family:Arial,Helvetica,sans-serif;">
                             <li>Priorizas el ahorro sobre el tiempo. Es una decisión legítima, pero no es esta.</li>
                             <li>Prefieres mantener el control de cada paso. Delegar implica soltar, y eso no se negocia.</li>
+                            <li>Vas a aplicar a una visa de turismo o de visitante (V). Son trámites cortos y no necesitan este nivel de acompañamiento. Si tu proyecto en Colombia es de largo plazo, es al contrario: aquí encaja.</li>
                         </ul>
                     </div>
                 </div>
@@ -536,6 +545,10 @@
                     <p>En los dos años que lleva operando la firma: 332 aplicaciones, 325 aprobaciones, 3 rechazos y 4 abandonos. Y más de 100 testimonios con 5 estrellas en Google y Lawzana.</p>
                 </div>
                 <div class="faq-item">
+                    <h3>¿Por qué crearon Cédula en Mano?</h3>
+                    <p>Porque hay personas que necesitan mucha más ayuda de la que encuentran. Casos que se atascan en el pago porque su tarjeta no pasa en las plataformas del Estado —ahí pagamos con la nuestra y lo resolvemos—, personas que no se sienten seguras en español y para quienes la cita de biometría es una fuente de estrés real, y pensionados obligados a usar plataformas anticuadas que funcionan mal. Este programa existe para que esa parte del proceso no la cargues tú.</p>
+                </div>
+                <div class="faq-item">
                     <h3>¿Qué significa exactamente “no toco un papel”?</h3>
                     <p>Que no redactas cartas, no llenas formularios y no persigues notarías, traductores ni proveedores. Nosotros preparamos, apostillamos, traducimos y armamos el expediente completo. Tú solo apareces en la biometría y en tu examen médico. No significa que no existan documentos: significa que no pasan por tus manos.</p>
                 </div>
@@ -545,11 +558,11 @@
                 </div>
                 <div class="faq-item">
                     <h3>¿Qué tengo que pagar yo?</h3>
-                    <p>Nada del trámite. El estudio de $56, la expedición de la visa, la cédula de extranjería y el seguro médico van dentro de los $4.500. La cédula la pagamos nosotros en la ventanilla, el día de la biometría, contigo. Si estás fuera de Colombia, el certificado médico lo sacas con un médico autorizado en tu país: te decimos cuál y validamos el documento.</p>
+                    <p>Nada por fuera. El estudio de $56, la expedición de la visa, la cédula de extranjería, el seguro médico, las notarías y los certificados van dentro de los $4.500. La cédula la pagamos nosotros en la ventanilla, el día de la biometría, contigo. Si estás fuera de Colombia, el certificado médico lo sacas con un médico autorizado en tu país: te decimos cuál y validamos el documento.</p>
                 </div>
                 <div class="faq-item">
                     <h3>¿Quién paga la cédula y quién me acompaña?</h3>
-                    <p>Nosotros. La cédula de extranjería ($294.000 COP) la pagamos en la ventanilla de Migración Colombia el día de la toma de datos biométricos, y vamos contigo: te esperamos, hacemos la fila a tu lado y, si algo se complica, hablamos por ti y reclamamos tus derechos. Migración permite acompañante, así que no tienes que enfrentar esa mañana solo ni en un idioma que no dominas.</p>
+                    <p>Nosotros. La cédula de extranjería ($294.000 COP) la pagamos en la ventanilla de Migración Colombia el día de la toma de datos biométricos, y vamos contigo: te esperamos a la hora que te asignen —mañana o tarde—, hacemos la fila a tu lado y, si algo se complica, hablamos por ti y reclamamos tus derechos. Migración permite acompañante, así que no tienes que enfrentar ese día solo ni en un idioma que no dominas.</p>
                 </div>
                 <div class="faq-item">
                     <h3>¿Qué incluye y qué no incluye?</h3>
@@ -558,6 +571,10 @@
                 <div class="faq-item">
                     <h3>¿Cuánto cuesta y cómo se paga?</h3>
                     <p>$4.500 USD todo incluido, en dos pagos: 50% a la firma de la propuesta y 50% a la radicación. Con tarjeta y factura legal. Cada beneficiario suma $990, con todo incluido para esa persona: sus tasas, su cédula, su seguro y su certificado médico si está en Colombia.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Cómo se confirma mi cupo?</h3>
+                    <p>Al enviar el formulario no pagas nada: Camila revisa tu caso y te envía la propuesta por escrito. El cupo queda reservado cuando firmas la propuesta y pagas el primer 50%. Hasta entonces sigue disponible para otros.</p>
                 </div>
                 <div class="faq-item">
                     <h3>¿Y cuando tenga que renovar mi visa?</h3>
@@ -589,14 +606,14 @@
         <section id="reservar" class="content-section bg-white">
             <div class="container">
                 <h2 class="section-title">Reserva tu lugar en Cédula en Mano</h2>
-                <p class="section-sub">Déjanos tus datos para revisar tu caso y confirmar tu cupo en la cohorte de enero de 2027.</p>
+                <p class="section-sub">Déjanos tus datos: revisamos tu caso y te enviamos la propuesta. El cupo se confirma al firmarla y pagar el 50%.</p>
 
                 <!-- FORMULARIO DE EJEMPLO (BORRADOR SOFI).
                      Al conectar SOFI: action → endpoint de la función, method="post",
                      y reemplazar el manejador JS que muestra el aviso de ejemplo. -->
                 <form class="form-caja" id="form-reservar" novalidate>
                     <h3>Solicitar mi lugar</h3>
-                    <p class="intro">Completa estos datos y el equipo de Camila te contacta con los pasos para tu visa.</p>
+                    <p class="intro">Completa estos datos y el equipo de Camila te contacta con la propuesta para tu visa.</p>
 
                     <div class="campo">
                         <label for="nombre">Nombre</label>
@@ -641,7 +658,8 @@
                         </select>
                     </div>
 
-                    <button type="submit">Reservar mi lugar</button>
+                    <button type="submit">Enviar mis datos</button>
+                    <p class="form-nota">Enviar tus datos no es la reserva: primero recibes la propuesta. El cupo queda confirmado cuando la firmas y pagas el primer 50%.</p>
                     <p class="legal">Tus datos se usan únicamente para evaluar tu caso y contactarte. <a href="https://www.abogadosdemigracion.com.co/politica-privacidad" target="_blank" rel="noopener">Política de privacidad</a>.</p>
 
                     <p class="form-aviso" id="aviso-reservar" role="status"></p>
