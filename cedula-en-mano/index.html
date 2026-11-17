@@ -62,6 +62,40 @@
     #opiniones .google-review-card.full{grid-column:1/-1;}
     @media (min-width:900px){#opiniones .google-review-card.full .review-text{column-count:2;column-gap:2.5rem;}}
     @media (max-width:900px){.navbar-container{gap:.5rem;}.nav-links{gap:.2rem;}.nav-link{padding:.35rem .45rem;font-size:.76rem;}.nav-cta{white-space:nowrap;}}
+    .hero-c{padding:2.5rem 0 3rem;background:#F8FAFC;border-bottom:1px solid #E2E8F0;text-align:left;}
+    .hero-c .container{display:grid;gap:1.75rem;align-items:center;}
+    @media (min-width:900px){.hero-c .container{grid-template-columns:1.05fr .95fr;gap:2.5rem;}}
+    .hero-c h1{font-family:Georgia,'Times New Roman',serif;font-size:2rem;line-height:1.2;color:#0f2040;margin:0 0 .85rem;font-weight:400;text-align:left;}
+    @media (min-width:900px){.hero-c h1{font-size:2.35rem;}}
+    .hero-c .entrada{font-size:1.05rem;color:#475569;margin:0 0 1.15rem;line-height:1.65;font-family:Arial,Helvetica,sans-serif;}
+    .hero-c ul{margin:0 0 1.5rem;padding-left:1.15rem;color:#334155;line-height:1.65;font-family:Arial,Helvetica,sans-serif;font-size:.96rem;}
+    .hero-c ul li{margin-bottom:.45rem;}
+    .hero-c ul b{color:#0f2040;}
+    .cta-fila{display:flex;flex-direction:column;gap:.75rem;}
+    .cta-fila .btn{text-align:center;max-width:360px;padding:.95rem 1.75rem;font-size:1.05rem;}
+    .video-c{position:relative;}
+    .hv-facade{position:relative;display:block;width:100%;padding:0;border:0;background:#0f2140;border-radius:.9rem;overflow:hidden;box-shadow:0 25px 50px -12px rgba(0,0,0,.3);cursor:pointer;}
+    .hv-facade img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;}
+    .hv-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;}
+    .hv-play span{width:76px;height:76px;border-radius:50%;background:rgba(15,32,64,.85);border:3px solid #fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px -6px rgba(0,0,0,.5);}
+    .hv-play svg{width:28px;height:28px;margin-left:4px;fill:#fff;}
+    .video-c iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:.9rem;display:block;box-shadow:0 25px 50px -12px rgba(0,0,0,.3);}
+    .video-c .pie{font-family:Arial,Helvetica,sans-serif;font-size:.85rem;color:#64748b;text-align:center;margin:.6rem 0 0;}
+    .prueba-video{font-family:Arial,Helvetica,sans-serif;font-size:.9rem;color:#475569;text-align:center;margin:.35rem 0 0;}
+    .prueba-video .estrellas{color:#FBBC04;letter-spacing:2px;}
+    .form-caja{background:#fff;border:1px solid #E5E7EB;border-radius:1rem;padding:1.75rem;max-width:560px;margin:1.5rem auto 0;box-shadow:0 20px 40px -28px rgba(15,32,64,.35);font-family:Arial,Helvetica,sans-serif;}
+    .form-caja h3{margin:0 0 .35rem;font-size:1.25rem;color:#0f2040;font-family:Georgia,'Times New Roman',serif;}
+    .form-caja .intro{margin:0 0 1.15rem;color:#475569;font-size:.95rem;line-height:1.6;}
+    .campo{margin-bottom:.95rem;}
+    .campo label{display:block;font-size:.85rem;font-weight:700;color:#0f2040;margin-bottom:.3rem;}
+    .campo input,.campo select{width:100%;box-sizing:border-box;padding:.7rem .8rem;border:1px solid #CBD5E1;border-radius:.5rem;font-size:1rem;font-family:inherit;color:#0f2040;background:#fff;}
+    .campo input:focus,.campo select:focus{outline:2px solid #c8a96a;outline-offset:1px;}
+    .form-caja button{width:100%;padding:.95rem 1rem;border:0;border-radius:.6rem;background:#0f2040;color:#fff;font-size:1rem;font-weight:700;cursor:pointer;}
+    .form-caja button:hover{opacity:.92;}
+    .form-caja .legal{font-size:.78rem;color:#64748b;margin:.8rem 0 0;line-height:1.5;}
+    .form-caja .legal a{color:#0f2040;}
+    .form-aviso{display:none;margin:.9rem 0 0;padding:.75rem .9rem;border-radius:.5rem;background:#ECFDF5;border:1px solid #A7F3D0;color:#065F46;font-size:.9rem;}
+    .form-aviso.error{background:#FEF2F2;border-color:#FECACA;color:#991B1B;}
     </style>
 </head>
 <body>
@@ -83,18 +117,31 @@
         </div>
     </nav>
 
-    <header>
+    <section class="hero-c">
         <div class="container">
-            <a href="#opiniones" class="trust-badge-hero">⭐ ⭐ ⭐ ⭐ ⭐ 5/5 · Más de 80 reseñas reales en Google</a>
-            <h1>Tu visa, tu cédula y tu primer mes — sin tocar un papel, sin entrar a una plataforma y sin abrir la billetera.</h1>
-            <h2>Cédula en Mano es el programa en el que nosotros armamos el expediente, entramos a SITAC, pagamos las tasas, la cédula y el seguro, y te acompañamos hasta el final — incluso en la fila de la biometría. Tú firmas el poder y apareces. <strong>15 cupos</strong> para la cohorte de enero de 2027.</h2>
-            <div class="hero-ctas-container">
-                <a href="https://calendar.app.google/siwsNHLYNfW3CHSp6" target="_blank" class="btn header-cta-primary">Reservar mi lugar – $80</a>
-                <a href="https://wa.me/573223395612?text=Hola%20Camila%2C%20quiero%20saber%20si%20califico%20para%20C%C3%A9dula%20en%20Mano%20(cohorte%20enero%202027)." target="_blank" class="btn header-cta-secondary">Quiero saber si califico</a>
+            <div>
+                <h1>Buscabas a alguien que se encargue de todo. Aquí está.</h1>
+                <p class="entrada">Migrar a Colombia parecía simple hasta que viste que por un lado van los abogados, por otro las aseguradoras, por otro las apostillas, las traducciones y las citas. <b>Cédula en Mano</b> reúne todo en un solo equipo y un solo precio: de los primeros documentos a la cédula de extranjería y tu primer mes en el país.</p>
+                <ul>
+                    <li><b>Un solo equipo de principio a fin.</b> Abogada senior, apostillas, traducciones, antecedentes, seguro médico y certificado médico bajo una misma mano.</li>
+                    <li><b>No entras a ninguna plataforma del Estado.</b> Radicamos en SITAC, agendamos en Migración Colombia y respondemos cada requerimiento con tu poder.</li>
+                    <li><b>No abres la billetera en el camino.</b> Tasas del gobierno, seguro y cédula incluidos en los $4.500 USD. El día de la biometría vamos contigo y pagamos en la ventanilla.</li>
+                    <li><b>Con Camila toma unas 7 semanas; por tu cuenta, entre 14 y 17.</b> Si Cancillería inadmite, volvemos a radicar sin cobrarte honorarios y cubriendo las tasas.</li>
+                </ul>
+                <div class="cta-fila">
+                    <a href="#reservar" class="btn header-cta-primary">Reservar mi lugar</a>
+                </div>
             </div>
-            <p style="font-size:0.875rem; margin-top:1.5rem; color:#64748b; font-family:Arial,Helvetica,sans-serif;">✓ $4.500 todo incluido &nbsp;·&nbsp; ✓ 15 cupos reales &nbsp;·&nbsp; ✓ Vamos contigo a la biometría</p>
+            <div class="video-c">
+                <button type="button" class="hv-facade" data-video="KqvUJaVQQ-Q" aria-label="Reproducir el vídeo de Camila Ocampo">
+                    <img src="../img/video-h.jpg" alt="Camila Ocampo, Abogada de Migración Colombiana" fetchpriority="high">
+                    <span class="hv-play" aria-hidden="true"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></span>
+                </button>
+                <p class="pie">Camila Ocampo, Abogada de Migración Colombiana</p>
+                <p class="prueba-video"><span class="estrellas">★★★★★</span> 5/5 · Más de 80 reseñas reales en Google</p>
+            </div>
         </div>
-    </header>
+    </section>
 
     <main>
         <section class="content-section bg-white" style="padding-top:3rem; padding-bottom:2rem;">
@@ -490,6 +537,64 @@
             </div>
         </section>
 
+        <section id="reservar" class="content-section bg-gray">
+            <div class="container">
+                <h2 class="section-title">Reserva tu lugar en Cédula en Mano</h2>
+                <p class="section-sub">Déjanos tus datos para revisar tu caso y confirmar tu cupo en la cohorte de enero de 2027.</p>
+
+                <!-- FORMULARIO DE EJEMPLO (BORRADOR SOFI).
+                     Al conectar SOFI: action → endpoint de la función, method="post",
+                     y reemplazar el manejador JS que muestra el aviso de ejemplo. -->
+                <form class="form-caja" id="form-reservar" novalidate>
+                    <h3>Solicitar mi lugar</h3>
+                    <p class="intro">Completa estos cuatro datos y el equipo de Camila te contacta con los pasos para tu visa.</p>
+
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="Tu nombre completo" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo" autocomplete="email" placeholder="tu@correo.com" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="nacionalidad">Nacionalidad</label>
+                        <input type="text" id="nacionalidad" name="nacionalidad" autocomplete="country-name" placeholder="Ej. Estados Unidos, España, Canadá…" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="visa">Visa de interés</label>
+                        <select id="visa" name="visa" required>
+                            <option value="">Selecciona una opción…</option>
+                            <option value="pensionado">Visa de Pensionado</option>
+                            <option value="nomada-digital">Visa de Nómada Digital</option>
+                            <option value="conyuge">Visa de Cónyuge</option>
+                            <option value="companero-permanente">Visa de Compañero Permanente</option>
+                            <option value="rentista">Visa de Rentista</option>
+                            <option value="inversionista">Visa de Inversionista</option>
+                            <option value="socio-propietario">Visa de Socio / Propietario</option>
+                            <option value="trabajador">Visa de Trabajador</option>
+                            <option value="residente">Visa de Residente (R)</option>
+                            <option value="padres-colombianos">Visa para Padres de Colombianos</option>
+                            <option value="mercosur">Visa Mercosur</option>
+                            <option value="excolombianos">Visa para Excolombianos</option>
+                            <option value="servicios-proyecto">Visa de Servicios / Proyecto</option>
+                            <option value="procesos-judiciales">Visa por Procesos Judiciales</option>
+                            <option value="beneficiario">Visa de Beneficiario</option>
+                            <option value="no-se">Aún no sé cuál me corresponde</option>
+                        </select>
+                    </div>
+
+                    <button type="submit">Reservar mi lugar</button>
+                    <p class="legal">Tus datos se usan únicamente para evaluar tu caso y contactarte. <a href="https://www.abogadosdemigracion.com.co/politica-privacidad" target="_blank" rel="noopener">Política de privacidad</a>.</p>
+
+                    <p class="form-aviso" id="aviso-reservar" role="status"></p>
+                </form>
+            </div>
+        </section>
+
         <section id="consulta" class="content-section bg-white" style="padding-top:0;">
             <div class="container">
                 <div class="consultation-card">
@@ -547,5 +652,46 @@
 
 <a id="waFloat" class="wa-float" href="https://wa.me/573223395612?text=Hola%20Camila%2C%20tengo%20una%20duda%20sobre%20C%C3%A9dula%20en%20Mano." target="_blank" rel="noopener" aria-label="WhatsApp"><span class="wa-tip">¿Dudas? Escríbenos</span><span class="wa-btn"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span></a>
 <script>(function(){var b=document.getElementById("waFloat");if(!b)return;var s=function(){b.classList.add("show")};setTimeout(s,4000);window.addEventListener("scroll",function(){if(window.scrollY>400)s();},{passive:true});})();</script>
+<script>
+/* Vídeo: póster local; YouTube solo al pulsar play. */
+(function () {
+    var b = document.querySelector('.hv-facade');
+    if (!b) return;
+    b.addEventListener('click', function () {
+        var id = this.getAttribute('data-video');
+        if (!id) return;
+        var f = document.createElement('iframe');
+        f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1&playsinline=1';
+        f.title = 'Vídeo de Camila Ocampo';
+        f.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+        f.setAttribute('allowfullscreen', '');
+        var c = this.parentNode;
+        c.innerHTML = '';
+        c.appendChild(f);
+        f.focus();
+    });
+})();
+
+/* FORMULARIO DE EJEMPLO (borrador SOFI): valida en el navegador y avisa. */
+(function () {
+    var form = document.getElementById('form-reservar');
+    var aviso = document.getElementById('aviso-reservar');
+    if (!form || !aviso) return;
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var nombre = document.getElementById('nombre');
+        var correo = document.getElementById('correo');
+        var nacionalidad = document.getElementById('nacionalidad');
+        var visa = document.getElementById('visa');
+        var okCorreo = correo && correo.value && /.+@.+\..+/.test(correo.value);
+        var ok = nombre && nombre.value.trim() && okCorreo && nacionalidad && nacionalidad.value.trim() && visa && visa.value;
+        aviso.className = 'form-aviso' + (ok ? '' : ' error');
+        aviso.textContent = ok
+            ? 'Formulario de ejemplo: aquí SOFI recibirá tus datos (nombre, correo, nacionalidad y visa) para reservar tu lugar.'
+            : 'Completa tu nombre, correo válido, nacionalidad y visa para continuar.';
+        aviso.style.display = 'block';
+    });
+})();
+</script>
 </body>
 </html>
