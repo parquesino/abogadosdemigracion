@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- EXCEPCIÓN DE PRECIO DICTADA POR EL DUEÑO: programa piloto "Cédula en Mano" ($1.290 USD).
+    <!-- EXCEPCIÓN DE PRECIO DICTADA POR EL DUEÑO: programa piloto "Cédula en Mano" ($2.900 USD, tasas del Estado incluidas).
+         Única excepción: la cédula de extranjería, que Migración Colombia cobra en persona en la toma de datos biométricos.
          Página noindex y fuera de sitemap/home mientras sea piloto de validación (nov-2026).
          Si el piloto se convierte en oferta oficial: quitar noindex, alta en sitemap y decidir tarjeta en home. -->
     <script src="../consent.js"></script>
@@ -14,15 +15,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex,nofollow">
     <link rel="icon" type="image/png" href="../favicon.png">
-    <title>Cédula en Mano: visa, cédula y primer mes — sin tocar un papel (cohorte enero 2027)</title>
-    <meta name="description" content="Programa Cédula en Mano: $1.290 USD, 15 cupos. Nosotros pedimos, apostillamos, traducimos y radicamos; tú firmas. Radicación en 72 h. Consulta $80 abonable.">
+    <title>Cédula en Mano: visa, cédula y primer mes — sin papeleo, sin plataformas y sin tasas (cohorte enero 2027)</title>
+    <meta name="description" content="Programa Cédula en Mano: $2.900 USD con las tasas del Estado incluidas, 15 cupos. No tocas un papel, no entras a ninguna plataforma y no pagas una sola tasa: nosotros lo hacemos. Única excepción: la cédula, que se paga en la biometría. Radicación en 72 h. Consulta $80 abonable.">
     <link rel="canonical" href="https://www.abogadosdemigracion.com/cedula-en-mano/">
     <link rel="alternate" hreflang="es" href="https://www.abogadosdemigracion.com/cedula-en-mano/">
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-    {"@type":"Question","name":"¿Qué significa que no toco un papel?","acceptedAnswer":{"@type":"Answer","text":"Que no persigues proveedores ni plataformas: nosotros contactamos, agendamos y coordinamos antecedentes, huellas, apostillas, traducciones, certificado médico y póliza. Tú firmas lo que solo tú puedes firmar y apareces en las citas."}},
-    {"@type":"Question","name":"¿Qué incluye el programa Cédula en Mano?","acceptedAnswer":{"@type":"Answer","text":"Honorarios de $1.290 USD con coordinación total de terceros, radicación en 72 horas con expediente completo, respuesta a requerimientos, re-radicación por inadmisión sin honorarios con el estudio oficial cubierto, registro de visa, citas de cédula y primer mes resuelto (EPS, banco, SIM)."}},
-    {"@type":"Question","name":"¿Y si inadmiten mi solicitud?","acceptedAnswer":{"@type":"Answer","text":"La volvemos a radicar sin cobrarte honorarios las veces necesarias y cubrimos el nuevo estudio oficial de $56 USD. No cubre el rechazo definitivo."}}
+    {"@type":"Question","name":"¿Qué significa que no toco un papel?","acceptedAnswer":{"@type":"Answer","text":"Que no redactas cartas, no llenas formularios y no persigues notarías, traductores ni proveedores. Nosotros preparamos, apostillamos, traducimos y armamos el expediente. Tú firmas el poder y apareces en la biometría."}},
+    {"@type":"Question","name":"¿Tengo que entrar a alguna plataforma del Estado?","acceptedAnswer":{"@type":"Answer","text":"No. No creas cuentas ni entras a SITAC, a Cancillería o a Migración Colombia. Radicamos nosotros con tu poder, respondemos los requerimientos y te enviamos cada documento aprobado."}},
+    {"@type":"Question","name":"¿Qué tasas tengo que pagar yo?","acceptedAnswer":{"@type":"Answer","text":"Ninguna del trámite de visa: el estudio de $56 USD y la expedición de la visa van incluidas en los $2.900. La única excepción es la cédula de extranjería, $294.000 COP, que Migración Colombia cobra en persona el día de la toma de datos biométricos."}},
+    {"@type":"Question","name":"¿Qué incluye el programa Cédula en Mano?","acceptedAnswer":{"@type":"Answer","text":"$2.900 USD con las tasas del Estado incluidas: expediente completo, coordinación de terceros, radicación en 72 horas, respuesta a requerimientos, re-radicación por inadmisión sin honorarios, registro de visa, citas de cédula y primer mes resuelto (EPS, banco, SIM)."}},
+    {"@type":"Question","name":"¿Y si inadmiten mi solicitud?","acceptedAnswer":{"@type":"Answer","text":"La volvemos a radicar sin cobrarte honorarios las veces necesarias y cubrimos las tasas de la nueva radicación. No cubre el rechazo definitivo."}}
     ]}
     </script>
     <link rel="stylesheet" href="../visa.css"><!-- CSS compartido en visa.css (fuente unica) -->
@@ -38,6 +41,17 @@
     .coh-badge{display:inline-block;background:#0f2040;color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:.4rem .85rem;border-radius:999px;margin-bottom:1rem;}
     .xtable td.no{color:#B91C1C;}
     .xtable td.yes{color:#15803D;font-weight:700;}
+    .no-grid{display:grid;gap:1.25rem;margin-top:2rem;}
+    @media (min-width:900px){.no-grid{grid-template-columns:repeat(3,1fr);}}
+    .no-card{background:#0f2040;border-radius:.75rem;padding:1.6rem;font-family:Arial,Helvetica,sans-serif;border-top:4px solid #c8a96a;}
+    .no-card .zero{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#c8a96a;}
+    .no-card h3{margin:.4rem 0 .5rem;color:#fff;font-size:1.2rem;}
+    .no-card p{margin:0;color:#CBD5E1;font-size:.95rem;}
+    .no-card strong{color:#fff;}
+    .exc-box{background:#FFF7ED;border:1px solid #FDBA74;border-left:5px solid #EA580C;border-radius:.75rem;padding:1.25rem 1.5rem;margin-top:1.5rem;font-family:Arial,Helvetica,sans-serif;}
+    .exc-box h3{margin:0 0 .5rem;color:#9A3412;font-size:1.1rem;}
+    .exc-box p{margin:0 0 .5rem;color:#7C2D12;font-size:.95rem;}
+    .exc-box p:last-child{margin-bottom:0;}
     #opiniones .reviews-grid{grid-template-columns:repeat(2,1fr);}
     #opiniones .google-review-card.full{grid-column:1/-1;}
     @media (min-width:900px){#opiniones .google-review-card.full .review-text{column-count:2;column-gap:2.5rem;}}
@@ -53,7 +67,7 @@
                 <img src="../logo-cp.png" alt="Colombian Passport Logo" class="navbar-logo" onerror="this.onerror=null;this.src='https://static.wixstatic.com/media/d8d541_c9976aa2f5f54957872bb02341cc2d9d~mv2.png';">
             </a>
             <div class="nav-links">
-                <a href="#compromisos" class="nav-link">Compromisos</a>
+                <a href="#no-haces" class="nav-link">Qué no haces</a>
                 <a href="#opiniones" class="nav-link">Opiniones</a>
                 <a href="#planes" class="nav-link">Precio</a>
                 <a href="#como-trabajamos" class="nav-link">Cómo trabajamos</a>
@@ -66,13 +80,13 @@
     <header>
         <div class="container">
             <a href="#opiniones" class="trust-badge-hero">⭐ ⭐ ⭐ ⭐ ⭐ 5/5 · Más de 80 reseñas reales en Google</a>
-            <h1>Tu visa, tu cédula y tu primer mes en Colombia — sin que toques un papel.</h1>
-            <h2>Cédula en Mano es el programa en el que nosotros pedimos, apostillamos, traducimos, radicamos y te acompañamos hasta la cédula. Tú firmas y apareces. <strong>15 cupos</strong> para la cohorte de enero de 2027.</h2>
+            <h1>Tu visa, tu cédula y tu primer mes — sin tocar un papel, sin entrar a una plataforma del Estado y sin pagar una sola tasa.</h1>
+            <h2>Cédula en Mano es el programa en el que nosotros armamos el expediente, entramos a SITAC, pagamos las tasas y te acompañamos hasta la cédula. Tú firmas el poder y apareces en la biometría. <strong>15 cupos</strong> para la cohorte de enero de 2027.</h2>
             <div class="hero-ctas-container">
                 <a href="https://calendar.app.google/siwsNHLYNfW3CHSp6" target="_blank" class="btn header-cta-primary">Reservar mi lugar – $80</a>
                 <a href="https://wa.me/573223395612?text=Hola%20Camila%2C%20quiero%20saber%20si%20califico%20para%20C%C3%A9dula%20en%20Mano%20(cohorte%20enero%202027)." target="_blank" class="btn header-cta-secondary">Quiero saber si califico</a>
             </div>
-            <p style="font-size:0.875rem; margin-top:1.5rem; color:#64748b; font-family:Arial,Helvetica,sans-serif;">✓ 15 cupos reales &nbsp;·&nbsp; ✓ Radicación en 72 h &nbsp;·&nbsp; ✓ Si inadmiten, re-radicamos sin honorarios</p>
+            <p style="font-size:0.875rem; margin-top:1.5rem; color:#64748b; font-family:Arial,Helvetica,sans-serif;">✓ $2.900 con tasas incluidas &nbsp;·&nbsp; ✓ 15 cupos reales &nbsp;·&nbsp; ✓ Si inadmiten, re-radicamos sin honorarios</p>
         </div>
     </header>
 
@@ -83,45 +97,68 @@
                     <span class="coh-badge">Cohorte fundadora · enero 2027 · 15 casos</span>
                 </div>
                 <div class="alert-box">
-                    <p style="margin:0;"><strong>Primera vez que abrimos el programa completo.</strong> El precio y los compromisos quedan fijos para quien entre en esta cohorte. No es un descuento: es acceso. Después del 15 de enero, la siguiente cohorte tendrá nuevas condiciones.</p>
+                    <p style="margin:0;"><strong>Primera vez que abrimos el programa completo.</strong> $2.900 USD con las tasas del Estado incluidas, no solo los honorarios. El precio y los compromisos quedan fijos para quien entre en esta cohorte. No es un descuento: es acceso. Después del 15 de enero, la siguiente cohorte tendrá nuevas condiciones.</p>
                 </div>
                 <h2 class="section-title">Lo que cambia cuando delegas de verdad</h2>
-                <p class="section-sub">El trámite no es difícil por la ley. Es difícil por los proveedores, las plataformas, los plazos y el miedo a equivocarse. Esto es lo que quitamos de tu lado.</p>
+                <p class="section-sub">El trámite no es difícil por la ley. Es difícil por los proveedores, las plataformas del Estado, las tasas y el miedo a equivocarse. Esto es lo que quitamos de tu lado.</p>
                 <div class="facts">
-                    <div class="fact"><b>Honorarios</b><span>$1.290 USD · 50% a la firma / 50% a la radicación</span></div>
+                    <div class="fact"><b>Precio</b><span>$2.900 USD · 50% a la firma / 50% a la radicación</span></div>
                     <div class="fact"><b>Cupos</b><span>15 casos · cierra el 15 de enero de 2027</span></div>
                     <div class="fact"><b>Radicación</b><span>72 horas con tu expediente completo</span></div>
-                    <div class="fact"><b>Incluye</b><span>Coordinación total + cédula + primer mes</span></div>
-                    <div class="fact"><b>Tasas y terceros</b><span>Al costo, con factura</span></div>
+                    <div class="fact"><b>Tasas del Estado</b><span>Incluidas: estudio y expedición</span></div>
+                    <div class="fact"><b>Única excepción</b><span>La cédula, en la biometría</span></div>
                     <div class="fact"><b>Abogada</b><span>Senior, de principio a fin</span></div>
                 </div>
             </div>
         </section>
 
-        <section id="compromisos" class="content-section bg-gray">
+        <section id="no-haces" class="content-section bg-gray">
             <div class="container">
-                <h2 class="section-title">Cuatro compromisos, por escrito</h2>
-                <p class="section-sub">No prometemos tu visa: nadie honesto puede. Nos hacemos cargo de todo lo demás —el esfuerzo, el tiempo, el riesgo y el acompañamiento— para que tu única tarea sea firmar.</p>
+                <h2 class="section-title">Tres cosas que no vuelves a hacer</h2>
+                <p class="section-sub">No es “te ayudamos con el papeleo”. Es que el papeleo, las plataformas y las tasas dejan de existir de tu lado.</p>
+                <div class="no-grid">
+                    <div class="no-card">
+                        <span class="zero">01 · Cero papeleo</span>
+                        <h3>No llenas un solo formulario</h3>
+                        <p>No redactas cartas, no corres a notarías, no persigues traductores. Preparamos, apostillamos, traducimos y armamos el expediente completo. <strong>Tú firmas el poder.</strong></p>
+                    </div>
+                    <div class="no-card">
+                        <span class="zero">02 · Cero plataformas</span>
+                        <h3>No entras a ningún portal del Estado</h3>
+                        <p>No creas cuentas, no peleas con SITAC, con Cancillería ni con Migración Colombia, no persigues contraseñas ni el botón que no funciona. <strong>Radicamos nosotros, con tu poder.</strong></p>
+                    </div>
+                    <div class="no-card">
+                        <span class="zero">03 · Cero tasas</span>
+                        <h3>No pagas una sola tasa del trámite</h3>
+                        <p>El estudio de $56 y la expedición de la visa van dentro del precio. <strong>La única excepción es la cédula</strong>, que Migración Colombia cobra en persona el día de la biometría.</p>
+                    </div>
+                </div>
+                <div class="bridge" style="margin-top:2rem;">
+                    <div class="n">→</div>
+                    <p><b>Por qué importa:</b> cada una de esas tres cosas es una forma distinta de perder semanas. Un formulario mal llenado, una cuenta bloqueada o una tasa pagada en la ventanilla equivocada retrasan el expediente igual que un error legal. Quitarlas de tu lado es el programa.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="compromisos" class="content-section bg-white">
+            <div class="container">
+                <h2 class="section-title">Tres compromisos, por escrito</h2>
+                <p class="section-sub">No prometemos tu visa: nadie honesto puede. Nos hacemos cargo de todo lo demás —el tiempo, el riesgo y el acompañamiento— para que tu única tarea sea firmar y aparecer.</p>
                 <div class="commit-grid">
                     <div class="commit-card">
-                        <span class="num">01 · Esfuerzo</span>
-                        <h3>Cero papeleo</h3>
-                        <p>Nosotros contactamos a cada proveedor: antecedentes, huellas, apostillas, traducciones, certificado médico y póliza. Tú apruebas, firmas lo que solo tú puedes firmar y apareces en la cita. <strong>No persigues un papel más.</strong></p>
-                    </div>
-                    <div class="commit-card">
-                        <span class="num">02 · Tiempo</span>
+                        <span class="num">01 · Tiempo</span>
                         <h3>72 horas para radicar</h3>
                         <p>Desde que tu expediente está completo, radicamos en 72 horas. Si no lo hacemos, <strong>te devolvemos la consulta de $80</strong>. Sin excusas de plataforma.</p>
                     </div>
                     <div class="commit-card">
-                        <span class="num">03 · Riesgo</span>
+                        <span class="num">02 · Riesgo</span>
                         <h3>Inadmisión cubierta</h3>
-                        <p>Si Cancillería inadmite, re-radicamos sin honorarios las veces necesarias — y esta vez <strong>el nuevo estudio oficial de $56 lo pagamos nosotros</strong>. No cubre el rechazo definitivo.</p>
+                        <p>Si Cancillería inadmite, re-radicamos sin honorarios las veces necesarias — y esta vez <strong>las tasas de la nueva radicación las pagamos nosotros</strong>. No cubre el rechazo definitivo.</p>
                     </div>
                     <div class="commit-card">
-                        <span class="num">04 · Acompañamiento</span>
+                        <span class="num">03 · Acompañamiento</span>
                         <h3>Hasta la cédula y el primer mes</h3>
-                        <p>El trámite no termina con la visa: cita de cédula, EPS, cuenta bancaria y lo básico para aterrizar. <strong>Incluido</strong>, no como extra.</p>
+                        <p>El trámite no termina con la visa: cita de biometría, cédula, EPS, cuenta bancaria y lo básico para aterrizar. <strong>Incluido</strong>, no como extra.</p>
                     </div>
                 </div>
                 <div class="bridge" style="margin-top:2rem;">
@@ -140,7 +177,7 @@
                         <p style="margin:0 0 .75rem;"><strong style="color:#166534;">Es para ti si…</strong></p>
                         <ul style="margin:0; padding-left:1.2rem; color:#166534; font-family:Arial,Helvetica,sans-serif;">
                             <li>Tienes una vía legal clara (la confirmamos en la consulta).</li>
-                            <li>Puedes cubrir honorarios y tasas, y prefieres no perseguir un papel más.</li>
+                            <li>Puedes cubrir el programa y la cédula, y prefieres no volver a entrar a una plataforma del Estado.</li>
                             <li>Quieres una abogada senior de principio a fin, no un call center.</li>
                         </ul>
                     </div>
@@ -149,7 +186,7 @@
                         <ul style="margin:0; padding-left:1.2rem; color:#991B1B; font-family:Arial,Helvetica,sans-serif;">
                             <li>Buscas que alguien te prometa la aprobación. Nadie honesto puede hacerlo.</li>
                             <li>Tienes un rechazo definitivo: hay que esperar 6 meses y evaluar otro trámite.</li>
-                            <li>No puedes cubrir las tasas del Estado (estudio, expedición y cédula).</li>
+                            <li>No puedes cubrir el programa ni la cédula de extranjería.</li>
                         </ul>
                     </div>
                 </div>
@@ -167,9 +204,11 @@
                         </thead>
                         <tbody>
                             <tr><td><b>Quién arma el expediente</b></td><td class="no">Tú, con guías y ChatGPT</td><td class="yes">Abogada senior + IA de validación</td></tr>
-                            <tr><td><b>Quién consigue apostillas y traducciones</b></td><td class="no">Tú, proveedor por proveedor</td><td class="yes">Nosotros coordinamos cada uno</td></tr>
-                            <tr><td><b>Quién responde un requerimiento</b></td><td class="no">Tú, sin saber qué espera Cancillería</td><td class="yes">Tu abogada, con táctica legal</td></tr>
-                            <tr><td><b>Si inadmiten</b></td><td class="no">Vuelves a pagar estudio y empiezas</td><td class="yes">Re-radicamos sin honorarios y cubrimos el estudio</td></tr>
+                            <tr><td><b>Quién consigue apostillas y traducciones</b></td><td class="no">Tú, proveedor por proveedor</td><td class="yes">Nosotros coordinamos y pagamos cada uno</td></tr>
+                            <tr><td><b>Quién entra a SITAC y responde requerimientos</b></td><td class="no">Tú, sin saber qué espera Cancillería</td><td class="yes">Tu abogada, con tu poder y táctica legal</td></tr>
+                            <tr><td><b>Quién paga estudio y expedición</b></td><td class="no">Tú, tasa por tasa</td><td class="yes">Incluidas en el precio</td></tr>
+                            <tr><td><b>Si inadmiten</b></td><td class="no">Vuelves a pagar estudio y empiezas</td><td class="yes">Re-radicamos sin honorarios y cubrimos las tasas</td></tr>
+                            <tr><td><b>Quién paga la cédula</b></td><td class="no">Tú, en la biometría</td><td class="yes">Tú también: es la única tasa que no se puede pagar por ti</td></tr>
                             <tr><td><b>Tiempo típico</b></td><td class="no">14–17 semanas</td><td class="yes">7 semanas recomendadas · radicación en 72 h</td></tr>
                             <tr><td><b>Quién responde por el error</b></td><td class="no">Nadie</td><td class="yes">La firma: 50% de honorarios si es nuestro</td></tr>
                         </tbody>
@@ -277,14 +316,14 @@
                         <img src="../img/paso2.jpg" alt="Firma digital y pago online de la propuesta" loading="lazy" onerror="this.style.display='none';">
                         <div class="how-body">
                             <p class="how-title"><span>2</span><b>Firma y primer 50%</b></p>
-                            <p class="how-text">Firma digital, factura legal automática y pago con tarjeta. Sin anticipos en efectivo ni vueltas. La consulta de $80 queda abonada.</p>
+                            <p class="how-text">Firma digital, factura legal automática y pago con tarjeta. Sin anticipos en efectivo ni vueltas. La consulta de $80 queda abonada. Desde aquí, las tasas del trámite ya no pasan por tus manos.</p>
                         </div>
                     </div>
                     <div class="how-card">
                         <img src="../img/paso3.jpg" alt="Portal Sofi con tu checklist en el teléfono" loading="lazy" onerror="this.style.display='none';">
                         <div class="how-body">
                             <p class="how-title"><span>3</span><b>Nosotros reunimos el expediente</b></p>
-                            <p class="how-text">Coordinamos antecedentes, huellas, apostillas, traducciones, certificado médico y póliza. En Sofi ves qué falta y qué ya está listo, desde el teléfono.</p>
+                            <p class="how-text">Coordinamos antecedentes, huellas, apostillas, traducciones, certificado médico y póliza. Tú no entras a ninguna plataforma: en Sofi ves qué falta y qué ya está listo, desde el teléfono.</p>
                         </div>
                     </div>
                     <div class="how-card">
@@ -298,14 +337,14 @@
                         <img src="../img/paso5.jpg" alt="Radicación y seguimiento del caso" loading="lazy" onerror="this.style.display='none';">
                         <div class="how-body">
                             <p class="how-title"><span>5</span><b>Radicación + segundo 50%</b></p>
-                            <p class="how-text">Radicamos en SITAC dentro de 72 horas con el expediente completo. Trackeamos a diario, respondemos requerimientos y te avisamos cada vencimiento.</p>
+                            <p class="how-text">Radicamos en SITAC dentro de 72 horas con el expediente completo y las tasas ya pagadas por nosotros. Trackeamos a diario, respondemos requerimientos y te avisamos cada vencimiento.</p>
                         </div>
                     </div>
                     <div class="how-card">
                         <img src="../img/paso6.jpg" alt="Entrega de la cédula de extranjería" loading="lazy" onerror="this.style.display='none';">
                         <div class="how-body">
                             <p class="how-title"><span>6</span><b>Cédula y primer mes resuelto</b></p>
-                            <p class="how-text">Registro de visa, cita de cédula, EPS, cuenta bancaria y SIM. La misma abogada que te recibió te acompaña hasta el final.</p>
+                            <p class="how-text">Registro de visa, cita de biometría, cédula, EPS, cuenta bancaria y SIM. La cédula se paga allí mismo, en la biometría: es lo único que pasa por tus manos. La misma abogada que te recibió te acompaña hasta el final.</p>
                         </div>
                     </div>
                 </div>
@@ -318,28 +357,29 @@
 
         <section id="planes" class="content-section bg-gray">
             <div class="container">
-                <h2 class="section-title">Un precio fijo. Un cupo real.</h2>
-                <p class="section-sub"><b>$1.290 USD</b> de honorarios · 50% a la firma y 50% a la radicación · 15 casos en la cohorte de enero de 2027.</p>
+                <h2 class="section-title">Un precio fijo. Todo el trámite incluido. Un cupo real.</h2>
+                <p class="section-sub"><b>$2.900 USD</b> con las tasas del Estado incluidas · 50% a la firma y 50% a la radicación · 15 casos en la cohorte de enero de 2027.</p>
                 <div style="max-width:640px; margin:0 auto;">
                     <div class="plan3 hero">
                         <span class="flag">Cohorte enero 2027 · 15 cupos</span>
                         <h3>Cédula en Mano</h3>
-                        <p class="slogan">Tu visa, tu cédula y tu primer mes — nosotros hacemos el trabajo.</p>
-                        <p class="who"><b>Para quién:</b> quien tiene una vía legal clara y prefiere delegar el expediente completo, no solo la radicación.</p>
-                        <p class="amt">$1.290 <small>USD</small></p>
-                        <p class="per">USD · honorarios · 50% a la firma / 50% a la radicación</p>
+                        <p class="slogan">Tu visa, tu cédula y tu primer mes — sin papeleo, sin plataformas y sin tasas.</p>
+                        <p class="who"><b>Para quién:</b> quien tiene una vía legal clara y no quiere volver a entrar a una plataforma del Estado ni pagar una tasa.</p>
+                        <p class="amt">$2.900 <small>USD</small></p>
+                        <p class="per">USD · tarifa plana con tasas incluidas · 50% a la firma / 50% a la radicación</p>
                         <ul class="ok">
                             <li>Todo el servicio de visa: documentos, cartas, SITAC y seguimiento</li>
+                            <li class="hot">Tasas del Estado incluidas: estudio de $56 y expedición de la visa</li>
                             <li class="hot">Coordinación total de terceros: antecedentes, huellas, apostillas y traducciones</li>
                             <li>Certificado médico y póliza de salud agendados por nosotros</li>
                             <li class="hot">Radicación en 72 horas con expediente completo</li>
                             <li>Respuesta a todos los requerimientos de Cancillería</li>
-                            <li class="hot">Re-radicación por inadmisión sin honorarios + estudio de $56 cubierto</li>
-                            <li>Registro de visa y todas las citas de cédula</li>
+                            <li class="hot">Re-radicación por inadmisión sin honorarios + tasas de la nueva radicación cubiertas</li>
+                            <li>Registro de visa y todas las citas de biometría y cédula</li>
                             <li class="hot">Primer mes resuelto: EPS, cuenta bancaria y SIM</li>
                             <li>Revisión de residencia fiscal y regla de 183 días</li>
                             <li>Abogada senior de principio a fin</li>
-                            <li>Visa de Beneficiario: +$300 por persona</li>
+                            <li>Visa de Beneficiario: +$300 por persona, con sus tasas de gobierno incluidas</li>
                         </ul>
                         <div style="text-align:center; margin-top:1.25rem;">
                             <a href="https://calendar.app.google/siwsNHLYNfW3CHSp6" target="_blank" class="btn header-cta-primary">Reservar mi lugar – $80</a>
@@ -349,23 +389,24 @@
                 </div>
                 <div class="bridge">
                     <div class="n">→</div>
-                    <p><b>Nuestra promesa:</b> si Cancillería inadmite tu solicitud, la volvemos a radicar sin cobrarte honorarios, las veces necesarias hasta la aprobación — y en esta cohorte cubrimos el nuevo estudio oficial de $56 USD. No cubre el rechazo definitivo.</p>
+                    <p><b>Nuestra promesa:</b> si Cancillería inadmite tu solicitud, la volvemos a radicar sin cobrarte honorarios, las veces necesarias hasta la aprobación — y en esta cohorte cubrimos las tasas de cada nueva radicación. No cubre el rechazo definitivo.</p>
                 </div>
                 <div class="bridge">
                     <div class="n">→</div>
                     <p><b>Cómo se paga:</b> reservas la consulta de $80 → Camila confirma tu caso y el precio por escrito → contratas con la consulta abonada: 50% a la firma y 50% a la radicación → tu abogada ejecuta y te mantiene al tanto de cada paso.</p>
                 </div>
-                <div class="bridge">
-                    <div class="n">→</div>
-                    <p><b>Qué NO incluye:</b> las tasas del Estado (estudio $56, expedición según visa, cédula $294.000 COP) y los costos de terceros (apostillas, traducciones, antecedentes, seguro). Se pagan al costo, con factura. Tampoco cubre el rechazo definitivo.</p>
+                <div class="exc-box">
+                    <h3>La única excepción, dicha sin letra pequeña</h3>
+                    <p><strong>La cédula de extranjería</strong> ($294.000 COP) la pagas tú, en persona, el día de la toma de datos biométricos en Migración Colombia. No es una decisión nuestra: esa entidad no acepta pago anticipado ni pago por tercero. Es la única tasa del proceso que no podemos pagar por ti.</p>
+                    <p><strong>El certificado médico y la póliza de salud</strong> se pagan al proveedor, al costo. Nosotros los agendamos, los coordinamos y te decimos el valor antes de que autorices.</p>
                 </div>
                 <div class="third-party-costs">
-                    <h4>Lo que se paga al Estado y a terceros</h4>
+                    <h4>Lo que ya está dentro de los $2.900</h4>
                     <ul>
-                        <li><strong>Estudio de la visa:</strong> $56 USD por cada radicación (en esta cohorte lo cubrimos si hay inadmisión).</li>
+                        <li><strong>Estudio de la visa:</strong> $56 USD por cada radicación, incluidas las re-radicaciones por inadmisión.</li>
                         <li><strong>Expedición de la visa:</strong> V $183 / M $279 / R $408 USD, solo si la aprueban.</li>
-                        <li><strong>Cédula de extranjería:</strong> $294.000 COP.</li>
-                        <li><strong>Apostillas, traducciones, antecedentes y seguro:</strong> según proveedor y país, con factura.</li>
+                        <li><strong>Apostillas, traducciones y antecedentes:</strong> los coordinamos y los pagamos nosotros.</li>
+                        <li><strong>Citas, gestiones y trámites ante el Estado:</strong> todos, sin cobro adicional.</li>
                     </ul>
                 </div>
             </div>
@@ -376,19 +417,27 @@
                 <h2 class="section-title">Respuestas directas, antes de preguntar</h2>
                 <div class="faq-item">
                     <h3>¿Qué significa exactamente “no toco un papel”?</h3>
-                    <p>Que no persigues proveedores ni plataformas. Nosotros contactamos, agendamos y coordinamos antecedentes, huellas, apostillas, traducciones, certificado médico y póliza. Tú firmas lo que solo tú puedes firmar —poderes, declaraciones, tu examen médico— y apareces en las citas. No significa que no existan documentos: significa que no los persigues.</p>
+                    <p>Que no redactas cartas, no llenas formularios y no persigues notarías, traductores ni proveedores. Nosotros preparamos, apostillamos, traducimos y armamos el expediente completo. Tú firmas el poder y lo que solo tú puedes firmar —declaraciones y tu examen médico— y apareces en la biometría. No significa que no existan documentos: significa que no pasan por tus manos.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Tengo que entrar a alguna plataforma del Estado?</h3>
+                    <p>No. No creas cuentas, no entras a SITAC, a Cancillería ni a Migración Colombia, no persigues contraseñas ni códigos de verificación. Radicamos nosotros con el poder que firmas, respondemos los requerimientos y te enviamos cada documento aprobado. La única diligencia presencial es la toma de datos biométricos para la cédula, y ahí te acompañamos.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Qué tasas tengo que pagar yo?</h3>
+                    <p>Ninguna del trámite de visa. El estudio de $56 USD y la expedición de la visa (V $183 / M $279 / R $408) van incluidas en los $2.900. La única excepción es la cédula de extranjería: $294.000 COP que Migración Colombia cobra en persona, el día de la biometría, porque no admite pago anticipado ni pago por tercero. El certificado médico y la póliza se pagan al proveedor, al costo, y te avisamos el valor antes.</p>
                 </div>
                 <div class="faq-item">
                     <h3>¿Qué incluye y qué no incluye?</h3>
-                    <p>Incluye los honorarios del servicio completo de visa, la coordinación de terceros, la radicación en 72 horas, la respuesta a requerimientos, la re-radicación por inadmisión sin honorarios con el estudio de $56 cubierto, el registro de visa, las citas de cédula y el primer mes resuelto (EPS, banco y SIM). No incluye las tasas del Estado, los costos de terceros ni el rechazo definitivo.</p>
+                    <p>Incluye el servicio completo de visa, la coordinación y el pago de terceros (antecedentes, huellas, apostillas, traducciones), las tasas del Estado (estudio y expedición), la radicación en 72 horas, la respuesta a requerimientos, la re-radicación por inadmisión sin honorarios y con las tasas cubiertas, el registro de visa, las citas de biometría y cédula, y el primer mes resuelto (EPS, banco y SIM). No incluye la cédula de extranjería, el certificado médico y la póliza (se pagan al proveedor) ni el rechazo definitivo.</p>
                 </div>
                 <div class="faq-item">
                     <h3>¿Cuánto cuesta y cómo se paga?</h3>
-                    <p>$1.290 USD de honorarios, en dos pagos: 50% a la firma de la propuesta y 50% a la radicación. Con tarjeta y factura legal. La consulta de $80 se abona al contratar. Cada beneficiario suma $300.</p>
+                    <p>$2.900 USD con las tasas del Estado incluidas, en dos pagos: 50% a la firma de la propuesta y 50% a la radicación. Con tarjeta y factura legal. La consulta de $80 se abona al contratar. Cada beneficiario suma $300, con sus tasas de gobierno incluidas; su cédula, su certificado médico y su póliza se pagan igual que los tuyos.</p>
                 </div>
                 <div class="faq-item">
                     <h3>¿Y si inadmiten mi solicitud?</h3>
-                    <p>La volvemos a radicar sin cobrarte honorarios, las veces necesarias hasta la aprobación, y en esta cohorte cubrimos el nuevo estudio oficial de $56 USD. No cubre el rechazo definitivo: si Cancillería rechaza de forma definitiva, hay 6 meses de espera y hay que evaluar otro trámite.</p>
+                    <p>La volvemos a radicar sin cobrarte honorarios, las veces necesarias hasta la aprobación, y en esta cohorte cubrimos las tasas de cada nueva radicación. No cubre el rechazo definitivo: si Cancillería rechaza de forma definitiva, hay 6 meses de espera y hay que evaluar otro trámite.</p>
                 </div>
                 <div class="faq-item">
                     <h3>¿Y si mi caso no es viable?</h3>
@@ -400,7 +449,7 @@
                 </div>
                 <div class="faq-item">
                     <h3>¿Aplica a cualquier visa? ¿Puedo hacerlo desde mi país?</h3>
-                    <p>Aplica a cualquier visa colombiana con vía legal clara: pensionado, nómada digital, cónyuge, rentista, inversionista, trabajador, residente y las demás. Se puede hacer desde Colombia o desde tu país de residencia, 100% en línea. No aplica a rechazos definitivos ni a casos sin ruta legal.</p>
+                    <p>Aplica a cualquier visa colombiana con vía legal clara: pensionado, nómada digital, cónyuge, rentista, inversionista, trabajador, residente y las demás. Se puede hacer desde Colombia o desde tu país de residencia: el poder se firma a distancia, nosotros radicamos y la biometría se hace cuando llegas. No aplica a rechazos definitivos ni a casos sin ruta legal.</p>
                 </div>
                 <div class="faq-item">
                     <h3>¿Qué pasa si no alcanzo la cohorte de enero?</h3>
@@ -433,7 +482,7 @@
     <section class="final-cta">
         <div class="container">
             <h2>La cohorte cierra el 15 de enero de 2027.</h2>
-            <p class="cta-subtitle">Quince casos, una abogada senior y un compromiso: tú no persigues un papel. Si tu visa es lo que separa tu vida actual de la que quieres, empecemos por la consulta.</p>
+            <p class="cta-subtitle">Quince casos, una abogada senior y un compromiso: tú no persigues un papel, no entras a una plataforma y no pagas una tasa. Si tu visa es lo que separa tu vida actual de la que quieres, empecemos por la consulta.</p>
             <div class="hero-ctas-container">
                 <a href="https://calendar.app.google/siwsNHLYNfW3CHSp6" target="_blank" class="btn header-cta-primary">Reservar consulta – $80</a>
                 <a href="https://wa.me/573223395612?text=Hola%20Camila%2C%20quiero%20saber%20si%20califico%20para%20C%C3%A9dula%20en%20Mano%20(cohorte%20enero%202027)." target="_blank" class="btn" style="background:#22C55E; color:#fff; padding:1rem 2rem; font-size:1.125rem;">Quiero saber si califico</a>
