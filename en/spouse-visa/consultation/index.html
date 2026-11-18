@@ -40,6 +40,7 @@
         .hv-play span { width:76px; height:76px; border-radius:50%; background:rgba(15,32,64,.85); border:3px solid #fff; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 26px -6px rgba(0,0,0,.5); }
         .hv-play svg { width:28px; height:28px; margin-left:4px; fill:#fff; }
         .video-c iframe { width:100%; aspect-ratio:16/9; border:0; border-radius:.9rem; display:block; box-shadow:0 25px 50px -12px rgba(0,0,0,.3); }
+        .video-c video { width:100%; aspect-ratio:16/9; border:0; border-radius:.9rem; display:block; background:#000; box-shadow:0 25px 50px -12px rgba(0,0,0,.3); }
         .video-c .pie { font-family:Arial,Helvetica,sans-serif; font-size:.85rem; color:#64748b; text-align:center; margin:.6rem 0 0; }
         .prueba-video { font-family:Arial,Helvetica,sans-serif; font-size:.9rem; color:#475569; text-align:center; margin:.5rem 0 0; }
         .prueba-video .estrellas { color:#FBBC04; letter-spacing:2px; }
@@ -148,8 +149,8 @@
                 <p class="nota-cta">Prefer to keep reading before deciding? <a href="#checklist">Get Camila's guide</a></p>
             </div>
             <div class="video-c">
-                <button type="button" class="hv-facade" data-video="KqvUJaVQQ-Q" aria-label="Play Camila's video">
-                    <img src="../../../img/video-h.jpg" alt="Camila Ocampo explains the spouse visa" fetchpriority="high">
+                <button type="button" class="hv-facade" data-video-src="../../../video/venta-consulta-en-1080.mp4" data-video-src-hd="../../../video/venta-consulta-en-720.mp4" aria-label="Play Camila's video">
+                    <img src="../../../img/venta-consulta-en.jpg" alt="Camila Ocampo explains the spouse visa consultation" fetchpriority="high">
                     <span class="hv-play" aria-hidden="true"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></span>
                 </button>
                 <p class="pie">Camila Ocampo, Colombian Immigration Lawyer</p>
@@ -468,11 +469,34 @@
 </footer>
 
 <script>
-/* Video: local poster; YouTube only loads on click. */
+/* Video: local file, loads only on click. No YouTube, no third-party cookies. */
 (function () {
     var b = document.querySelector('.hv-facade');
     if (!b) return;
     b.addEventListener('click', function () {
+        var src = this.getAttribute('data-video-src');
+        var hd = this.getAttribute('data-video-src-hd');
+        var poster = this.querySelector('img') ? this.querySelector('img').src : '';
+        var contenedor = this.parentNode;
+        contenedor.innerHTML = '';
+
+        if (src) {
+            var usar = (window.innerWidth < 900 && hd) ? hd : src;
+            var v = document.createElement('video');
+            v.controls = true;
+            v.autoplay = true;
+            v.preload = 'none';
+            v.setAttribute('playsinline', '');
+            v.poster = poster;
+            var s = document.createElement('source');
+            s.src = usar;
+            s.type = 'video/mp4';
+            v.appendChild(s);
+            contenedor.appendChild(v);
+            v.play().catch(function () {});
+            return;
+        }
+
         var id = this.getAttribute('data-video');
         if (!id) return;
         var f = document.createElement('iframe');
@@ -480,9 +504,7 @@
         f.title = "Camila Ocampo's video";
         f.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
         f.setAttribute('allowfullscreen', '');
-        var c = this.parentNode;
-        c.innerHTML = '';
-        c.appendChild(f);
+        contenedor.appendChild(f);
         f.focus();
     });
 })();
