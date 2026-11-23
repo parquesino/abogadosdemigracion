@@ -78,11 +78,14 @@
     .tier .not{margin:auto 0 0;padding-top:.9rem;border-top:1px solid #E5E7EB;font-size:.8rem;color:#64748b;line-height:1.5;}
 
     .p-steps{display:grid;gap:1.1rem;margin-top:1.5rem;counter-reset:paso;}
-    @media (min-width:768px){.p-steps{grid-template-columns:repeat(4,1fr);}}
+    @media (min-width:768px){.p-steps{grid-template-columns:repeat(3,1fr);}}
     .p-step::before{counter-increment:paso;content:counter(paso);display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:#0f2040;color:#fff;font-family:Arial,Helvetica,sans-serif;font-weight:700;margin-bottom:.6rem;}
     .p-step h3{font-size:1rem;margin:0 0 .35rem;color:#0f2040;font-family:Arial,Helvetica,sans-serif;}
     .p-step p{margin:0;color:#475569;font-size:.9rem;line-height:1.6;font-family:Arial,Helvetica,sans-serif;}
 
+    .p-lang{background:#0f2040;border-radius:.75rem;padding:1.1rem 1.3rem;margin-top:1.75rem;font-family:Arial,Helvetica,sans-serif;}
+    .p-lang p{margin:0;color:#CBD5E1;font-size:.95rem;line-height:1.6;}
+    .p-lang b{color:#c8a96a;}
     .p-terms{display:grid;gap:.9rem;margin-top:1.75rem;font-family:Arial,Helvetica,sans-serif;}
     @media (min-width:768px){.p-terms{grid-template-columns:repeat(2,1fr);}}
     .p-terms div{background:#fff;border:1px solid #E5E7EB;border-radius:.6rem;padding:.85rem 1rem;font-size:.9rem;color:#475569;}
@@ -106,6 +109,10 @@
     .p-faq summary{cursor:pointer;font-weight:700;color:#0f2040;}
     .p-faq p{margin:.6rem 0 0;color:#475569;line-height:1.6;}
 
+    .p-agenda{background:#fff;border:1px solid #E5E7EB;border-radius:1rem;overflow:hidden;margin-top:1.5rem;box-shadow:0 20px 40px -24px rgba(15,32,64,.35);}
+    .p-agenda iframe{width:100%;height:720px;border:0;display:block;}
+    @media (max-width:640px){.p-agenda iframe{height:920px;}}
+    .p-agenda-pie{font-family:Arial,Helvetica,sans-serif;font-size:.85rem;color:#64748b;text-align:center;margin:.75rem 0 0;}
     .p-final{background:#0f2040;color:#fff;padding:3rem 0;text-align:center;}
     .p-final h2{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:1.9rem;margin:0 0 .7rem;}
     .p-final p{font-family:Arial,Helvetica,sans-serif;color:#CBD5E1;max-width:40rem;margin:0 auto 1.5rem;}
@@ -134,10 +141,10 @@
                     <div><b>Onshore team</b><span>We go with them to Migración Colombia</span></div>
                 </div>
                 <div class="p-cta">
-                    <a class="btn p-btn-gold" href="mailto:camila@colombianpassport.com?subject=Partnership%20%E2%80%94%20Colombian%20pensioner%20visa">Request a partnership call</a>
+                    <a class="btn p-btn-gold" href="#partner-call">Book a partner call</a>
                     <a class="btn p-btn-ghost" href="https://wa.me/573223395612?text=Hello%20Camila%2C%20we%20would%20like%20to%20discuss%20a%20partner%20agreement%20for%20Colombian%20pensioner%20visa%20cases." target="_blank" rel="noopener">WhatsApp Camila</a>
                 </div>
-                <p class="p-reply">We reply within one business day.</p>
+                <p class="p-reply">30 minutes with Camila · no obligation.</p>
             </div>
         </section>
 
@@ -301,17 +308,23 @@
 
         <section class="p-section">
             <div class="container">
-                <h2>How we work with agencies</h2>
+                <h2>The method</h2>
+                <p class="lead">Agencies rarely lose cases for lack of lawyers. They lose them for lack of order. This is the part we built.</p>
                 <div class="p-steps">
-                    <div class="p-step"><h3>You send the case</h3><p>Client documents and profile. We confirm eligibility within 24 hours.</p></div>
-                    <div class="p-step"><h3>We quote in writing</h3><p>A fixed price per case, with government fees itemized. No hourly billing.</p></div>
-                    <div class="p-step"><h3>We file and report</h3><p>Filing, requirements and approval, with a status update at every stage.</p></div>
-                    <div class="p-step"><h3>We land the client</h3><p>Biometrics, cédula, collection and the first month — on the ground, in Spanish.</p></div>
+                    <div class="p-step"><h3>You send the case</h3><p>Client profile and documents. We confirm eligibility and the visa route within one business day.</p></div>
+                    <div class="p-step"><h3>Written quote and signature</h3><p>Fixed price per case, government fees itemized. Digital signature and invoice, no hourly billing.</p></div>
+                    <div class="p-step"><h3>Sofi opens the case</h3><p>Your client gets access to Sofi: questionnaire, templates and a personalized checklist from their phone — in their own language.</p></div>
+                    <div class="p-step"><h3>AI prepares, a senior decides</h3><p>Sofi extracts data, drafts documents and catches typos. A senior attorney reviews every file before it moves.</p></div>
+                    <div class="p-step"><h3>Filing and daily tracking</h3><p>We file in SITAC, track every day, answer requirements and flag each deadline. One file, not scattered chats.</p></div>
+                    <div class="p-step"><h3>Registration and cédula</h3><p>Visa registration, cédula appointment, in-person accompaniment at Migración Colombia and card collection.</p></div>
+                </div>
+                <div class="p-lang">
+                    <p><b>Sofi adapts to your client's language.</b> Documents, timelines and updates are delivered in their natural language, so the process never depends on their English or Spanish.</p>
                 </div>
                 <div class="p-terms">
                     <div><b>Payment:</b> 50% at signature, 50% at filing. USD, invoice.</div>
                     <div><b>Timeline:</b> 5–7 weeks typical, from a complete file to approval.</div>
-                    <div><b>Languages:</b> English and Spanish, written and spoken.</div>
+                    <div><b>Languages:</b> English and Spanish, plus Sofi in the client's language.</div>
                     <div><b>Inadmissibility:</b> we re-file at no additional legal fee.</div>
                     <div><b>Capacity:</b> a limited number of partner cases per month, confirmed in the agreement.</div>
                     <div><b>Data:</b> data processing agreement available on request.</div>
@@ -364,12 +377,23 @@
             </div>
         </section>
 
+        <section class="p-section gray" id="partner-call">
+            <div class="container">
+                <h2>Book a partner call</h2>
+                <p class="lead">30 minutes with Camila to review your pipeline, the rate card and the first case. No obligation.</p>
+                <div class="p-agenda">
+                    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2sSKMC8SGTlQ0msQ81ZiUX1_yXbpP3htzCNtuRiWncHWa5tVDKdBjIysJ4ya9GejSTs2RZIs0_?gv=true" title="Partner call with Camila Ocampo" loading="lazy"></iframe>
+                </div>
+                <p class="p-agenda-pie">If the calendar does not load, <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2sSKMC8SGTlQ0msQ81ZiUX1_yXbpP3htzCNtuRiWncHWa5tVDKdBjIysJ4ya9GejSTs2RZIs0_" target="_blank" rel="noopener">open it in Google Calendar</a>.</p>
+            </div>
+        </section>
+
         <section class="p-final">
             <div class="container">
                 <h2>Send us your first case.</h2>
                 <p>Tell us the profile and we will confirm eligibility, the price and the timeline in writing within 24 hours.</p>
                 <div class="p-cta" style="justify-content:center;">
-                    <a class="btn p-btn-gold" href="mailto:camila@colombianpassport.com?subject=Partnership%20%E2%80%94%20Colombian%20pensioner%20visa">Email Camila</a>
+                    <a class="btn p-btn-gold" href="#partner-call">Book a partner call</a>
                     <a class="btn p-btn-ghost" href="https://wa.me/573223395612?text=Hello%20Camila%2C%20we%20would%20like%20to%20discuss%20a%20partner%20agreement%20for%20Colombian%20pensioner%20visa%20cases." target="_blank" rel="noopener">WhatsApp</a>
                 </div>
                 <p class="p-contact">camila@colombianpassport.com · +57 322 339 5612 · Bogotá, Colombia</p>
