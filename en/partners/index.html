@@ -90,6 +90,17 @@
     @media (min-width:768px){.p-terms{grid-template-columns:repeat(2,1fr);}}
     .p-terms div{background:#fff;border:1px solid #E5E7EB;border-radius:.6rem;padding:.85rem 1rem;font-size:.9rem;color:#475569;}
     .p-terms b{color:#0f2040;}
+    .p-bio{display:grid;gap:1.25rem;align-items:center;margin-top:1.75rem;font-family:Arial,Helvetica,sans-serif;}
+    @media (min-width:768px){.p-bio{grid-template-columns:160px 1fr;gap:1.75rem;}}
+    .p-bio-photo{width:160px;height:160px;border-radius:50%;object-fit:cover;display:block;margin:0 auto;box-shadow:0 12px 30px -14px rgba(15,32,64,.45);}
+    .p-bio-name{margin:0;font-family:Georgia,'Times New Roman',serif;font-size:1.3rem;color:#0f2040;}
+    .p-bio-role{margin:.15rem 0 .6rem;font-size:.78rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#a8843c;}
+    .p-bio-text{margin:0;color:#475569;font-size:.95rem;line-height:1.65;}
+    .p-host{display:flex;align-items:center;gap:1rem;margin-top:1.75rem;font-family:Arial,Helvetica,sans-serif;}
+    .p-host-photo{width:64px;height:64px;border-radius:50%;object-fit:cover;display:block;}
+    .p-host-avatar{display:none;width:64px;height:64px;border-radius:50%;background:#0f2040;color:#fff;align-items:center;justify-content:center;font-weight:700;font-size:1.1rem;}
+    .p-host b{display:block;color:#0f2040;font-size:1rem;}
+    .p-host span{font-size:.85rem;color:#64748b;}
 
     .p-stats{display:grid;gap:1.25rem;margin-top:1.5rem;text-align:center;}
     @media (min-width:768px){.p-stats{grid-template-columns:repeat(4,1fr);}}
@@ -142,9 +153,9 @@
                 </div>
                 <div class="p-cta">
                     <a class="btn p-btn-gold" href="#partner-call">Book a partner call</a>
-                    <a class="btn p-btn-ghost" href="https://wa.me/573223395612?text=Hello%20Camila%2C%20we%20would%20like%20to%20discuss%20a%20partner%20agreement%20for%20Colombian%20pensioner%20visa%20cases." target="_blank" rel="noopener">WhatsApp Camila</a>
+                    <a class="btn p-btn-ghost" href="https://wa.me/573223395612?text=Hello%2C%20we%20would%20like%20to%20discuss%20a%20partner%20agreement%20for%20Colombian%20visa%20cases." target="_blank" rel="noopener">WhatsApp</a>
                 </div>
-                <p class="p-reply">30 minutes with Camila · no obligation.</p>
+                <p class="p-reply">30 minutes with Alejandro · no obligation.</p>
             </div>
         </section>
 
@@ -332,7 +343,7 @@
             </div>
         </section>
 
-        <section class="p-section gray">
+        <section class="p-section gray" id="track">
             <div class="container">
                 <h2>Track record</h2>
                 <div class="p-stats">
@@ -341,7 +352,15 @@
                     <div class="p-stat"><b>100+</b><span>Five-star reviews</span></div>
                     <div class="p-stat"><b>15+</b><span>Years of practice</span></div>
                 </div>
-                <p class="lead" style="margin-top:1.75rem;">Colombian Passport is led by Camila Ocampo, attorney from Universidad de los Andes (2007) and former senior immigration attorney at BM Legal. The firm is registered in Spain, works 100% online and is a member of Colbar.</p>
+                <div class="p-bio">
+                    <img src="../../img/camila-partner.jpg" alt="Camila Ocampo, founder of Colombian Passport" class="p-bio-photo" loading="lazy">
+                    <div>
+                        <p class="p-bio-name">Camila Ocampo</p>
+                        <p class="p-bio-role">Founder and Managing Partner</p>
+                        <p class="p-bio-text">Attorney from Universidad de los Andes (2007) and former senior immigration attorney at BM Legal. The firm is registered in Spain, works 100% online and is a member of Colbar.</p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -380,9 +399,14 @@
         <section class="p-section gray" id="partner-call">
             <div class="container">
                 <h2>Book a partner call</h2>
-                <p class="lead">30 minutes with Camila to review your pipeline, the rate card and the first case. No obligation.</p>
+                <p class="lead">30 minutes with Alejandro, our Commercial Director, to review your pipeline, the rate card and the first case. No obligation.</p>
+                <div class="p-host">
+                    <img src="../../img/alejandro.jpg" alt="Alejandro, Commercial Director" class="p-host-photo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <div class="p-host-avatar" aria-hidden="true">A</div>
+                    <div><b>Alejandro Moreno Azcárate</b><span>Commercial Director</span></div>
+                </div>
                 <div class="p-agenda">
-                    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2sSKMC8SGTlQ0msQ81ZiUX1_yXbpP3htzCNtuRiWncHWa5tVDKdBjIysJ4ya9GejSTs2RZIs0_?gv=true" title="Partner call with Camila Ocampo" loading="lazy"></iframe>
+                    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2sSKMC8SGTlQ0msQ81ZiUX1_yXbpP3htzCNtuRiWncHWa5tVDKdBjIysJ4ya9GejSTs2RZIs0_?gv=true" title="Partner call with Alejandro" loading="lazy"></iframe>
                 </div>
                 <p class="p-agenda-pie">If the calendar does not load, <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2sSKMC8SGTlQ0msQ81ZiUX1_yXbpP3htzCNtuRiWncHWa5tVDKdBjIysJ4ya9GejSTs2RZIs0_" target="_blank" rel="noopener">open it in Google Calendar</a>.</p>
             </div>
@@ -394,7 +418,7 @@
                 <p>Tell us the profile and we will confirm eligibility, the price and the timeline in writing within 24 hours.</p>
                 <div class="p-cta" style="justify-content:center;">
                     <a class="btn p-btn-gold" href="#partner-call">Book a partner call</a>
-                    <a class="btn p-btn-ghost" href="https://wa.me/573223395612?text=Hello%20Camila%2C%20we%20would%20like%20to%20discuss%20a%20partner%20agreement%20for%20Colombian%20pensioner%20visa%20cases." target="_blank" rel="noopener">WhatsApp</a>
+                    <a class="btn p-btn-ghost" href="https://wa.me/573223395612?text=Hello%2C%20we%20would%20like%20to%20discuss%20a%20partner%20agreement%20for%20Colombian%20visa%20cases." target="_blank" rel="noopener">WhatsApp</a>
                 </div>
                 <p class="p-contact">camila@colombianpassport.com · +57 322 339 5612 · Bogotá, Colombia</p>
             </div>
